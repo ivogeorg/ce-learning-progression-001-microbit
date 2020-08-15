@@ -1,6 +1,6 @@
 _**TODO:**_
 1. _Incorporate materials from [programming notebooks](https://github.com/CE-Curriculum-Development/mat-cpe-1040)._  
-2. _Rearrange for the _study, apply, present_ structure (e.g. [Lesson and assignment 006](https://github.com/ivogeorg/ce-lesson-and-asst-006-flip-flops/blob/master/lesson-and-assignment.md)._  
+2. _Rearrange for the _study, apply, present_ structure like [CE Learning Progression 006: Flip-flops](https://github.com/ivogeorg/https://github.com/ivogeorg/ce-learning-progression-006-flip-flops)._  
 
 ---
 
