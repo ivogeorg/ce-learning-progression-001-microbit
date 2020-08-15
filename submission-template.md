@@ -1,12 +1,14 @@
 # CPE 1040 - Spring 2020
 
-## Submission template
+## Submission 001
+
+_What is [lorem ipsum](https://www.lipsum.com/)?_
 
 ### Task 2.3.1: Visualize output of built-in function generator
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-File: [sample.js](sample.js)
+File: [programs/microbit-program-1-3-666.js](programs/microbit-program-1-3-666.js)
 
 Demo: [https://imgur.com/gallery/g4rBAg3](https://imgur.com/gallery/g4rBAg3)
 
@@ -35,6 +37,3 @@ Image 1:
 
 **Explanation:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## A note on "lorem ipsum"
-
-_What is [lorem ipsum](https://www.lipsum.com/)?_
