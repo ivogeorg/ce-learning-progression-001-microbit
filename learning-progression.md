@@ -34,7 +34,7 @@ basic.showIcon(IconNames.Heart)
 ### Step 2: Comments
 
 ```javascript
-basic.showIcon(IconNames.Heart)       // not executed
+basic.showIcon(IconNames.Heart)       // this text not executed
 ```
 
 #### 1. Study
