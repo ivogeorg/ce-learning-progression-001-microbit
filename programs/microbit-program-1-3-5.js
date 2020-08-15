@@ -1,1 +1,0 @@
-basic.showIcons(IconNames.Heart)
