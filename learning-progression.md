@@ -228,7 +228,7 @@ while (true) {
    Loops are for repeating instuctions; so one doesn't need to explicitly repeat code.
  There are three types of loops.
  
- '''javascript
+ ```javascript
  for(let = starting_value; Exit_condition; starting_value = starting_value + increment_value)
  {
     // stuff to be repeated 
@@ -275,7 +275,7 @@ ________________________________________________________________________________
  _____________________________________________________________________________________
  // 
  
- '''
+ ```
    
 #### 2. Apply
 
