@@ -299,11 +299,16 @@ basic.forever(function () {
 ```
 
 #### 1. Study
-
+In the event a [button]{https://makecode.microbit.org/reference/input} a pressed all code is stopped. 
+We call this an interput. 
+There are other triggers for an interupt more on that later.
 #### 2. Apply
+Weild a button press to change the behaveior of a function that is already running. 
+
+
 
 #### 3. Present
-
+Save the program in the programs folder as Your_Name_event.js
 
 
 ### Step 12:  Flipping a boolean
