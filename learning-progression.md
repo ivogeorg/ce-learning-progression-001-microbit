@@ -224,7 +224,56 @@ while (true) {
 ```
 
 #### 1. Study
-
+ Abstract:
+   Loops are for repeating instuctions; so one doesn't need to explicitly repeat code.
+ There are three types of loops.
+ for(let = starting_value; Exit_condition; starting_value = starting_value + increment_value)
+ {
+    // stuff to be repeated 
+ }
+ /*
+    For loops are generally use for repeating things for a  set number of repetitions.
+    The starting_value variable is used for seting a generally a whole number interger.
+    
+    An exit condition is used to end the loops. 
+    An example would be starting_value < 5.
+    So for the duration the storage location starting_value is less than 5 in this case.
+    The loop would repeat what is in it's encapsulation.
+    
+    The increment_value changes the starting_value by a constant value every time the loop runs its course.
+    The long form is starting_value = starting_value + 1.
+    This form is a bit confusing for starters.
+    
+    explicity stated:
+    
+    final_value = Starting_value + 1
+    then 
+    starting_value = final_value
+    
+    So the + 1 is the increment value. 
+    
+    
+    Most commonly 1 is used so a short hand exists.
+    value++ means add 1 after the loop completes
+    ++value means add 1 before the loop completes 
+    decrement forms exist too.
+    Which are equivalent to Starting value.
+    
+ */
+______________________________________________________________________________________
+ While(exit_condition)
+ {
+ //stuff to be repeated 
+ }
+ 
+ /*
+    
+ */
+ _____________________________________________________________________________________
+ // 
+ 
+ 
+   
 #### 2. Apply
 
 #### 3. Present
