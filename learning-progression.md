@@ -227,11 +227,14 @@ while (true) {
  Abstract:
    Loops are for repeating instuctions; so one doesn't need to explicitly repeat code.
  There are three types of loops.
+ 
+ '''javascript
  for(let = starting_value; Exit_condition; starting_value = starting_value + increment_value)
  {
     // stuff to be repeated 
  }
  /*
+ 
     For loops are generally use for repeating things for a  set number of repetitions.
     The starting_value variable is used for seting a generally a whole number interger.
     
@@ -272,7 +275,7 @@ ________________________________________________________________________________
  _____________________________________________________________________________________
  // 
  
- 
+ '''
    
 #### 2. Apply
 
