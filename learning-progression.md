@@ -259,8 +259,11 @@ while (true) {
     Most commonly 1 is used so a short hand exists.
     value++ means add 1 after the loop completes
     ++value means add 1 before the loop completes 
-    decrement forms exist too.
-    Which are equivalent to Starting value.
+    Decrement forms exist too.
+    
+    Which are equivalent to starting_value = starting_value -1.
+    starting_value-- means subtract 1 after the loop completes
+    --starting_value means subtract 1 before the loop completes 
     
  */
 ______________________________________________________________________________________
