@@ -134,9 +134,9 @@ basic.showIcon(IconNames.Butterfly)
 
 #### 1. Study
 
-In the English language, a statement that begins with "if" is followed by a condition. If the condition is met, the next statement follows as a logical consequence. For example, in the sentence "If it starts to rain, then I will get wet." When it starts to rain the condition is met, so the latter part of the sentence necessarily follows.
+In the English language, a statement that begins with "if" is followed by a condition. If the condition is met, the next statement follows as a logical consequence. For example, in the sentence "If it starts to rain, then I will get wet." The condition is that "it starts to rain." When the condition becomes true, the second part of the sentence - "I will get wet" - also becomes true.
 
-A conditional statement in programming works in the same way. In the following example, the statement begins with "if," and the condition written within the parentheses is "true." Therefore, the statements inside the first block of code are run. The "else" statement can be thought of as an alternative to the "if" statement - it will only run if the condition for "if" is not met. Therefore, in this version of our code it will be ignored.
+In javascript, we use statements that begin with `if` in the same way. Take a look at the following code:
 
 ```javascript
 if (true) { //This condition is always true, so the code in this block will run.
@@ -150,44 +150,69 @@ if (true) { //This condition is always true, so the code in this block will run.
 }
 ```
 
-Conversely, if the condition provided within the parentheses is "false," then the statements in the first block of code will be skipped. Instead, the code in the block following "else" will be run.
+In the above example, the statement begins with `if`, and the condition written within the parentheses is `true`. Therefore, the statements inside the first block of code are run. The `else` block can be thought of as an alternative to the `if` statement - it will only run if the condition for `if` is not met. Therefore, in this version of our code it will be ignored.
+
+_In javascript, words like `true` and `false` are special keywords reserved by the language. These keywords can only be used to represent a specific boolean value. More on booleans in the next step._
+
+Conversely, if the condition provided within the parentheses is `false`, then the statements in the first block of code will be skipped. Instead, the code in the block following `else` will be run.
 
 ```javascript
-if (false) { //This block will be ignored
+if (false) { //This block will be ignored.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else { //This block will run since its only (implicit) condition is that the above block did not run.
+} else { //The only condition for this block of code to run, is that the above block did not run.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
 }
 ```
 
+Code written as "`if`-`else`" statements is always executed in an either-or fashion. This means that only one of the two blocks will run. So the program will split and only one of the two possible outcomes will be executed, this is known as a conditional "branch" in programming. 
+
 #### 2. Apply
+
+1. Write a program that shows a heart icon if the condition is true and a butterfly if the condition is false.  
+2. See what happens when you replace `true` or `false` with a mathematical relationship that will be evaluated as either true or false.
+For example, a relationship in which one number is greater than (`>`) or less than (`<`) another.  
+
+   Note that if you are trying to express equality, you will need two equals signs: `==`.
 
 #### 3. Present
 
+In the [Lab Notebook](README.md), include:
+1. A short narrative about the experiment.
+2. Short video of the operation of your code in 2.2.2.
 
+In the repository [programs folder](./programs), include:
+1. File `microbit-program-2-2-2.js` with the code you used in task 2.2.2.
 
 ### Step 6: Data types
 
 #### 1. Study
 
-The basic functions of a computer are to store and process electrical signals which represent binary numbers, 1's and 0's. These numbers are used to represent all of the information in our computers, from a simple text document to an HD movie.
+To start thinking about the most basic type of data we can store, it is helpful to use the analogy of a light switch. When the switch is set to the higher power state, it is on, which can be interpretted to mean true or 1. When the switch is flipped to the lower power state, it is off, false, or 0. In this analogy, we can see that the same piece of data (the light switch being on or off) can be used to represent different kinds of information. 
 
-To start thinking about the most basic type of data we can store, it is helpful to use the analogy of a light switch. When the switch is set to the higher power state it is on, which can be interpretted to mean true or 1. When the switch is flipped to the lower power state it is off, false, or 0. In this analogy, we can see that the same piece of data (the light switch being on or off) can be used to represent different kinds of information. 
+One of the most rudimentary types of data in javascript is a "Boolean," which has two possible values: `true` and `false`. We can apply this in the example that we used in the previous step to switch which block of code in the "`if`-`else`" statement is run.
 
-As such, one of the most rudimentary types of data in javascript is a "Boolean," which can has two possible states: "true" and "false." We can apply this in the example that we used in the previous step to allow us to more easily switch which block of code in the "if-else" statement is run.
+A variable is a symbol that is used to represent information. In a computer program, a variable can store information that is intended for use later on. The information stored in the variable can change as the program runs. For example, we may create a boolean with the value of `true`, and change it to `false` if a particular condition is met.
 
-To declare a variable with a type (such as boolean) in javascript, the following template can be used: "let _name_ : _type_". The keyword "let" indicates that the line that follows will be to declare a variable. The "_name_" can be replaced with any name that is valid for the variable. And the "_type_" indicates how the stored data will be interpretted. For example, if we want to say that we have a variable called "isHeart," which will store a boolean, we would enter "let isHeart : boolean". With this code, we have declared our variable and given it a type, however it is not holding value. Since it has been declared as a boolean, we can either assign it a value of "true" or "false." To assign this variable a value or change the value it currently holds, we could enter "isHeart = true" or "isHeart = false".
-
-Additionally, javascript allows us to declare our variable and assign it an initial value in one line by typing "let _name_ : _type_ = _value_". In our example, to declare "isHeart" as a boolean and assign it an initial value "true," we would type "let isHeart : boolean = true".
+In the previous step, we used the boolean literals `true` and `false` to change the outcome of our program. A boolean is also a [data type](https://makecode.microbit.org/javascript/types) for a variable. So, when a variable is declared, we can use the keyword `boolean` to indicate that it will store one of two possible boolean values.
 
 ```javascript
-let isHeart : boolean = true //Declares isHeart as a boolean and assigns it the initial value "true."
+let myVar : boolean
+```
 
-if (isHeart) { //Since "isHeart" is true, the code in the first block will run.
+Above is an example of how to declare a new variable in javascript. The keyword `let` indicates that the line that follows will be to declare a variable. The word after `let`, in this case `myVar`, will be interpretted as the name of this new variable. After the variable name, a colon must be placed before giving the new variable a type, in this case `boolean`.
+
+With this code, we have declared our variable and given it a type, however it has not been assigned any value. Since it has been declared as a `boolean`, its value can be either `true` or `false`. To assign this variable a value or change the value it currently holds, we would enter `myVar = true` or `myvar = false`.
+
+Javascript also allows us to declare our variable and assign it an initial value in one line. To declare `myVar` as a `boolean` and give it an initial value of `true`, we would enter `let mVar : boolean = true`.
+
+```javascript
+let isHeart : boolean = true //Declares isHeart as a boolean and assigns it the initial value `true`.
+
+if (isHeart) { //Since `isHeart` is true, the code in the first block will run.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
@@ -208,7 +233,7 @@ if (isHeart) { //Since "isHeart" is true, the code in the first block will run.
 
 #### 1. Study
 
-In programming, a function is a piece of code that can be written once and used repeatedly.
+In programming, a function is a block of code that can be written once and used repeatedly. As such, a function allows us to reuse code that we or someone else has written. We have been using built-in functions since step one, `basic.showIcon(IconNames.Heart)` 
 
 ```javascript
 function displayIcons(isHeart : boolean) {
