@@ -132,6 +132,12 @@ basic.showIcon(IconNames.Butterfly)
 
 ### Step 5: Conditionals
 
+#### 1. Study
+
+In the English language, a statement that begins with "if" is followed by a condition. If the condition is met, the next statement follows as a logical consequence. For example, in the sentence "If it starts to rain, then I will get wet." When it starts to rain the condition is met, so the latter part of the sentence necessarily follows.
+
+A conditional statement in programming works in the same way. In the following example, the statement begins with "if," and the condition written within the parentheses is "true." Therefore, the statements inside the first block of code are run.
+
 ```javascript
 if (true) {
     basic.showIcon(IconNames.Heart)
@@ -142,7 +148,11 @@ if (true) {
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
 }
-   
+```
+
+Conversely, if the condition provided within the parentheses is "false," then the statements in the first block of code will be skipped. Instead, the code in the block following "else" will be run.
+
+```javascript
 if (false) {
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
@@ -154,8 +164,6 @@ if (false) {
 }
 ```
 
-#### 1. Study
-
 #### 2. Apply
 
 #### 3. Present
@@ -163,6 +171,14 @@ if (false) {
 
 
 ### Step 6: Data types
+
+#### 1. Study
+
+The basic functions of a computer are to store and process electrical signals which represent binary numbers, 1's and 0's. These numbers are used to represent all of the information in our computers, from a simple text document to an HD movie.
+
+To start thinking about the most basic type of data we can store, it is helpful to use the analogy of a light switch. When the switch is set to the higher power state it is on, which can be interpretted to mean true or 1. When the switch is flipped to the lower power state it is off, false, or 0. In this analogy, we can see that the same piece of data (the light switch being on or off) can be used to represent different kinds of information. 
+
+The smallest type of data that exists in a computer is known as a "Boolean," which has two possible states: "true" or "false." We can apply this in the example that we used above to allow us to more easily switch which block of code is run.
 
 ```javascript
 let isHeart : boolean = true
@@ -177,8 +193,6 @@ if (isHeart) {
     basic.showIcon(IconNames.Snake)
 }
 ```
-
-#### 1. Study
 
 #### 2. Apply
 
