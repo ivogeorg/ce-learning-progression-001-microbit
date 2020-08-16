@@ -178,7 +178,7 @@ The basic functions of a computer are to store and process electrical signals wh
 
 To start thinking about the most basic type of data we can store, it is helpful to use the analogy of a light switch. When the switch is set to the higher power state it is on, which can be interpretted to mean true or 1. When the switch is flipped to the lower power state it is off, false, or 0. In this analogy, we can see that the same piece of data (the light switch being on or off) can be used to represent different kinds of information. 
 
-The smallest type of data that exists in a computer is known as a "Boolean," which has two possible states: "true" or "false." We can apply this in the example that we used above to allow us to more easily switch which block of code is run.
+As such, one of the most rudimentary types of data in javascript is a "Boolean," which can has two possible states: "true" and "false." We can apply this in the example that we used in the previous step to allow us to more easily switch which block of code in the "if-else" statement is run.
 
 ```javascript
 let isHeart : boolean = true
