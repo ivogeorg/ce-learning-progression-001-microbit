@@ -136,14 +136,14 @@ basic.showIcon(IconNames.Butterfly)
 
 In the English language, a statement that begins with "if" is followed by a condition. If the condition is met, the next statement follows as a logical consequence. For example, in the sentence "If it starts to rain, then I will get wet." When it starts to rain the condition is met, so the latter part of the sentence necessarily follows.
 
-A conditional statement in programming works in the same way. In the following example, the statement begins with "if," and the condition written within the parentheses is "true." Therefore, the statements inside the first block of code are run.
+A conditional statement in programming works in the same way. In the following example, the statement begins with "if," and the condition written within the parentheses is "true." Therefore, the statements inside the first block of code are run. The "else" statement can be thought of as an alternative to the "if" statement - it will only run if the condition for "if" is not met. Therefore, in this version of our code it will be ignored.
 
 ```javascript
-if (true) {
+if (true) { //This condition is always true, so the code in this block will run.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else {
+} else { //Everything in this block is ignored because the first "if" statement was true.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
@@ -153,11 +153,11 @@ if (true) {
 Conversely, if the condition provided within the parentheses is "false," then the statements in the first block of code will be skipped. Instead, the code in the block following "else" will be run.
 
 ```javascript
-if (false) {
+if (false) { //This block will be ignored
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else {
+} else { //This block will run since its only (implicit) condition is that the above block did not run.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
@@ -180,14 +180,18 @@ To start thinking about the most basic type of data we can store, it is helpful 
 
 As such, one of the most rudimentary types of data in javascript is a "Boolean," which can has two possible states: "true" and "false." We can apply this in the example that we used in the previous step to allow us to more easily switch which block of code in the "if-else" statement is run.
 
-```javascript
-let isHeart : boolean = true
+To declare a variable with a type (such as boolean) in javascript, the following template can be used: "let _name_ : _type_". The keyword "let" indicates that the line that follows will be to declare a variable. The "_name_" can be replaced with any name that is valid for the variable. And the "_type_" indicates how the stored data will be interpretted. For example, if we want to say that we have a variable called "isHeart," which will store a boolean, we would enter "let isHeart : boolean". With this code, we have declared our variable and given it a type, however it is not holding value. Since it has been declared as a boolean, we can either assign it a value of "true" or "false." To assign this variable a value or change the value it currently holds, we could enter "isHeart = true" or "isHeart = false".
 
-if (isHeart) {
+Additionally, javascript allows us to declare our variable and assign it an initial value in one line by typing "let _name_ : _type_ = _value_". In our example, to declare "isHeart" as a boolean and assign it an initial value "true," we would type "let isHeart : boolean = true".
+
+```javascript
+let isHeart : boolean = true //Declares isHeart as a boolean and assigns it the initial value "true."
+
+if (isHeart) { //Since "isHeart" is true, the code in the first block will run.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else {
+} else { //The "else" block will be ignored.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
@@ -202,6 +206,10 @@ if (isHeart) {
 
 ### Step 7: Functions
 
+#### 1. Study
+
+In programming, a function is a piece of code that can be written once and used repeatedly.
+
 ```javascript
 function displayIcons(isHeart : boolean) {
     if (isHeart) {
@@ -215,10 +223,8 @@ function displayIcons(isHeart : boolean) {
     }
 }
    
-displayIcons()
+displayIcons(true)
 ```
-
-#### 1. Study
 
 #### 2. Apply
 
