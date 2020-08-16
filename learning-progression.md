@@ -163,6 +163,7 @@ if (false) {
 
 
 ### Step 6: Data types
+! remake there is way to change isHeart in this version of the code
 
 ```javascript
 let isHeart : boolean = true
@@ -179,12 +180,29 @@ if (isHeart) {
 ```
 
 #### 1. Study
+A Variable is a storage container declared by the [let keyword.]{https://makecode.microbit.org/javascript/variables} 
+The following is the label. 
+In the example above isHeart is a label. 
+In which the boolean data type is expected. 
+There are other [data types.]{https://makecode.microbit.org/types}
+one of which is interger. which is for whole numbers.
+Another is string which is a sequence of letters.
+others will be intoduced in time.
 
+Numbers can be outputed to the 5x5 led matrix using [show number.]{https://makecode.microbit.org/reference/basic/show-number}
+Strings can be outputed to the 5x5 led matric using [show string.]{https://makecode.microbit.org/reference/basic/show-string}
+
+Varables can be weilded as conidtionals as well.
+ 
 #### 2. Apply
 
+Wield a variable and output it to the 5X5 matix.
+
+
+
 #### 3. Present
-
-
+Save the program as Your_Name_variables.js
+Also save a video with the funtioning code to [yuja.]{https://msudenver.yuja.com/}
 
 ### Step 7: Functions
 
