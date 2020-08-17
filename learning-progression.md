@@ -259,8 +259,8 @@ while (true) {
     Most commonly 1 is used so a short hand exists.
     value++ means add 1 after the loop completes
     ++value means add 1 before the loop completes 
-    Decrement forms exist too.
     
+    Decrement forms exist too.
     Which are equivalent to starting_value = starting_value -1.
     starting_value-- means subtract 1 after the loop completes
     --starting_value means subtract 1 before the loop completes 
@@ -270,20 +270,34 @@ ________________________________________________________________________________
  While(exit_condition)
  {
  //stuff to be repeated 
+ 
  }
  
  /*
-    
+    If the exit condition is not full filled. 
+    The loop will repeat, the code within the encapulation.
  */
+     while(true)
+    {
+    // stuff to be repeated.
+    }
+    /*
+    Is equivalent to a forever loop.
+    Since the exit conidtion is always true.
+    */
  _____________________________________________________________________________________
- // 
+
  
  ```
    
 #### 2. Apply
+ Use a loop to count from 0 to 10.
+ Using a loop of your chosing and basic.showNumber().
+
 
 #### 3. Present
-
+Record a video of your micro:bit device runing your code on yuja.
+Also save your program in the programs folder named Placeholder.js.
 
 
 ### Step 9: Loop function
@@ -298,6 +312,7 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+
 
 #### 2. Apply
 
@@ -322,6 +337,7 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+ Notice in the above loop that there is a 
 
 #### 2. Apply
 
