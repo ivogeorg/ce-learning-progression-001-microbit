@@ -259,12 +259,13 @@ while (true) {
     Most commonly 1 is used so a short hand exists.
     value++ means add 1 after the loop completes
     ++value means add 1 before the loop completes 
+    starting_value counts up 
     
     Decrement forms exist too.
     Which are equivalent to starting_value = starting_value -1.
     starting_value-- means subtract 1 after the loop completes
     --starting_value means subtract 1 before the loop completes 
-    
+    Take note that the form of decrement for loops your starting_value counts down.
  */
 ______________________________________________________________________________________
  While(exit_condition)
@@ -292,6 +293,7 @@ ________________________________________________________________________________
    
 #### 2. Apply
  Use a loop to count from 0 to 10.
+ With a basic.pause() in between each count
  Using a loop of your chosing and basic.showNumber().
 
 
@@ -337,7 +339,8 @@ basic.forever(function () {
 ```
 
 #### 1. Study
- Notice in the above loop that there is a 
+ Notice in the above loop that there is some code outside the loop.
+ That code is computed once. 
 
 #### 2. Apply
 
@@ -370,6 +373,7 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+An event is an interupt in the example above is the
 
 #### 2. Apply
 
