@@ -3,14 +3,14 @@ _**TODO:**_
 2. _Rearrange for the _study, apply, present_ structure like [CE Learning Progression 006: Flip-flops](https://github.com/ivogeorg/https://github.com/ivogeorg/ce-learning-progression-006-flip-flops)._  
 ---
 
-# CPE 1040 - Spring 2020
+# CPE 1040 - Fall 2020
 
 This is the first learning progression for the Fall 2020 installment of the CPE 1040 - Intro to Computer Engineering course at MSU Denver.
 
 Table of Contents
 =================
 
-* [CPE 1040 \- Spring 2020](#cpe-1040---spring-2020)
+* [CPE 1040 \- Fall 2020](#cpe-1040---fall-2020)
 * [Table of Contents](#table-of-contents)
   * [Learning Progression 001: micro:bit](#learning-progression-001-microbit)
     * [Step 1: One\-line program](#step-1-one-line-program)
@@ -66,7 +66,7 @@ Table of Contents
 
 ## Learning Progression 001: micro:bit
 
-This progression will just familarize you with the environment we'll use: Microsoft Teams, Github Classroom, and Microsoft Makecode. All the activities will be shown and LA-ed in the lab, including submitting the assignment. Programming in JavaScript will be shown, as well as editing Markdown files, like this [README](README.md).
+This progression will dive right into writing a short program for the micro:bit. Along the way, we will introduce and motivate elements of the programming language JavaScript. This progression will also serve as our first follow-through of our standard assignment workflow on Microsoft MakeCode and Github Classroom. Finally, we will introduce how to write [Markdown](https://en.wikipedia.org/wiki/Markdown) files  like this [README](README.md).
 
 ### Step 1: One-line program
 
