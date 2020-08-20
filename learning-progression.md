@@ -245,7 +245,19 @@ basic.forever(function () {
 
 #### 1. Study
 It is common to repeat code that is already writen. This is done with loops. One of the ways that this is done is with the [forever loops.]{https://makecode.microbit.org/reference/basic/forever}
-The encapsulation of code within the function is repeated unless a button action has taken over the processor. 
+The encapsulation of code within the function is repeated unless a button action has taken over the processor.
+basic.forever(function()
+{
+// repeated code
+}
+)
+is equvalent to  
+while(true)
+{
+// repeated code
+}
+The only differnce is the function is taken in as a variable.
+This makes basic.forever a first class function.
 
 There are three ways to display the 5x5 led matrix expicity. 
  One of which is [Show LEDs]{https://makecode.microbit.org/reference/basic/show-leds}
@@ -256,12 +268,11 @@ There are three ways to display the 5x5 led matrix expicity.
       This clears the 5x5 LED matix.   
 
 #### 2. Apply
- Write a program that uses a forever loop. 
- That displays a image on the 5x5 led matrix on the micro:bit for 2 seconds then is blank for 2 seconds.
+ Write a program that uses a forever loop that displays a image on the 5x5 led matrix on the micro:bit for 2 seconds then is blank for 2 seconds.
 
 
 #### 3. Present
-Save your program in the programs folder as Your_Name_loop_function.js
+Save your program in the programs folder as placeholder.js
 Also record with of your working program[Yuja]{https://msudenver.yuja.com/} 
 
 
