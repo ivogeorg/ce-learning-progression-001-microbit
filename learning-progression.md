@@ -132,53 +132,97 @@ basic.showIcon(IconNames.Butterfly)
 
 ### Step 5: Conditionals
 
+#### 1. Study
+
+In the English language, a statement that begins with "if" is followed by a condition. If the condition is met, the next statement follows as a logical consequence. For example, in the sentence "If it starts to rain, then I will get wet." The condition is that "it starts to rain." When the condition becomes true, the second part of the sentence - "I will get wet" - also becomes true.
+
+In javascript, we use statements that begin with `if` in the same way. Take a look at the following code:
+
 ```javascript
-if (true) {
+if (true) { //This condition is always true, so the code in this block will run.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else {
-    basic.showIcon(IconNames.Angry)
-    basic.pause(2000)
-    basic.showIcon(IconNames.Snake)
-}
-   
-if (false) {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(2000)
-    basic.showIcon(IconNames.Butterfly)
-} else {
+} else { //Everything in this block is ignored because the first "if" statement was true.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
 }
 ```
 
-#### 1. Study
+In the above example, the statement begins with `if`, and the condition written within the parentheses is `true`. Therefore, the statements inside the first block of code are run. The `else` block can be thought of as an alternative to the `if` statement - it will only run if the condition for `if` is not met. Therefore, in this version of our code it will be ignored.
+
+_In javascript, words like `true` and `false` are special keywords reserved by the language. The keywords `true` and `false` can only be used to represent a specific boolean value. More on booleans in the next step. Other examples of keywords that we have been using in our code include `boolean`, `if`, and `else`._
+
+Conversely, if the condition provided within the parentheses is `false`, then the statements in the first block of code will be skipped. Instead, the code in the block after `else` will be run.
+
+```javascript
+if (false) { //This block will be ignored.
+    basic.showIcon(IconNames.Heart)
+    basic.pause(2000)
+    basic.showIcon(IconNames.Butterfly)
+} else { //The only condition for this block of code to run, is that the above block did not run.
+    basic.showIcon(IconNames.Angry)
+    basic.pause(2000)
+    basic.showIcon(IconNames.Snake)
+}
+```
+
+Code written as "`if`-`else`" statements is always executed in an either-or fashion. This means that only one of the two blocks will run. So the program will split and only one of the two blocks will be executed, this is known as a conditional "branch" in programming. 
 
 #### 2. Apply
 
+1. Write a program that shows a heart icon if the condition is `true` and a butterfly if the condition is `false`.  
+2. See what happens when you replace `true` or `false` with a mathematical relationship that will be evaluated as either true or false.
+For example, a relationship in which one number is greater than (`>`) or less than (`<`) another.  
+
+   If you are trying to express equality, you will need two equals signs: `==`. In programming languages, the double equals sign is used as a comparison operator. This means that it can only be used for the comparison of two values. A single equals sign (`=`) is used as an assignment operator. This means that it can only be used in the context of assigning a value to a variable. This concept is covered in more detail in the next step.
+   
+   Other comparison operators in javascript include `!=` for "not equal to", `>=` for "greater than or equal to", and `<=` for "less than or equal to." 
+
 #### 3. Present
 
+In the [Lab Notebook](README.md), include:
+1. A short narrative about the experiment.  
+2. Short video of your code from 5.2.2 running on your microbit.
 
+In the repository [programs folder](./programs), include:
+1. File `microbit-program-5-2-2.js` with the code you used in task 2.2.2.
 
 ### Step 6: Data types
 
-```javascript
-let isHeart : boolean = true
+#### 1. Study
 
-if (isHeart) {
+The files on a computer are distinguished from each other (eg, video files, audio files, photos, etc.) so that the computer knows how they will be used. In the same way, data that we store and use while programming needs to be distinguished so that the programming language understands how we want to use this data.
+
+In a computer program, a variable is a symbol used to store data that is intended for use later on. To tell the programming language how we intend for our data to be used, we must give it [type](https://makecode.microbit.org/javascript/types). The types that come built into our programming language are known as "primitive types." One of these types is the "boolean," which has two possible states: `true` and `false`. Other common data types in javascript are numbers and strings.
+
+The data stored in the variable can change as the program runs. For example, we may create a boolean with the value of `true`, and change it to `false` if a particular condition is met.
+
+_In the program written in step 5, we used the keywords `true` and `false` to change the outcome of our program. These keywords are also known as "[literals](https://en.wikipedia.org/wiki/Literal_(computer_programming))," or more specifically "boolean literals." In contrast to a variable, the value of literal never changes._
+
+```javascript
+let myVar : boolean
+```
+Above is an example of how to declare a new variable in javascript. The keyword `let` indicates that the line that follows will be to declare a variable. The word after `let`, in this case `myVar`, will be interpretted as the name of this new variable. After the variable name, a colon must be placed before specifying the type of the new variable, in this case `boolean`.
+
+With this code, we have declared our variable of a specific type. However, it has not been assigned any value. Since it has been declared as a `boolean`, its value can be either `true` or `false`. To assign this variable a value or change the value it currently holds, we would enter `myVar = true` or `myvar = false`.
+
+Javascript also allows us to declare our variable and assign it an initial value in one line. To declare `myVar` as a `boolean` and give it an initial value of `true`, we would enter `let mVar : boolean = true`.
+
+```javascript
+let isHeart : boolean = true //Declares isHeart as a boolean and assigns it the initial value `true`.
+
+if (isHeart) { //Since `isHeart` is true, the code in the first block will run.
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
-} else {
+} else { //The "else" block will be ignored.
     basic.showIcon(IconNames.Angry)
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
 }
 ```
-
-#### 1. Study
 
 #### 2. Apply
 
@@ -188,8 +232,15 @@ if (isHeart) {
 
 ### Step 7: Functions
 
+#### 1. Study
+
+In programming, a [function](https://makecode.microbit.org/javascript/functions) is a named block of code that can be written once and used repeatedly. As such, a function allows us to reuse code that we or someone else has written. We have been using built-in functions since step one. The line `basic.showIcon(IconNames.Heart)` uses the "showIcon" function.
+
+The following program encapsulates our `if`-`else` blocks from step 6 in a function then calls that function:
+
 ```javascript
-function displayIcons(isHeart : boolean) {
+//Declares our named function with 1 argument of the type `boolean`.
+function displayIcons(isHeart : boolean) { //This curly bracket is the opening delimiter, indicating the start of the code encapsulated in this function.
     if (isHeart) {
         basic.showIcon(IconNames.Heart)
         basic.pause(2000)
@@ -199,18 +250,34 @@ function displayIcons(isHeart : boolean) {
         basic.pause(2000)
         basic.showIcon(IconNames.Snake)
     }
-}
-   
-displayIcons()
+} //This curly bracket is the closing delimiter, indicating that everything afterward is not contained in this function.
+
+displayIcons(true) //Calls our function.
 ```
 
-#### 1. Study
+The first line is called a signature. It contains the keyword `function` followed by the name of our function, in this case `displayIcons`. Inside the parentheses we place arguments. Arguments are local variables, meaning that the function is going to use them in its block of code. Like any other variable, arguments have types. Note that functions can also be declared with no arguments or many arguments.  
+
+ Under the signature is the function's code block. Like all code blocks, it is composed of a series of statements.
+ 
+The function's code block defines what we want our function to do. However, it does not actually execute the code in the function. For this we need to [call the function](https://makecode.microbit.org/javascript/call), or to tell javascript that we want to execute this function. The function call must include any arguments defined by the function's signature with the appropriate types. In our case, we can use boolean literals (`true` and `false`) or a boolean variable that has been assigned a value. 
 
 #### 2. Apply
 
+1. Write a function called `addSubtract` that accepts three arguments: one boolean and two numbers. Each argument in your function signature will need to be separated by commas. You can use this code get you started: `function addSubtract (sign : boolean, ... ) {`. Replace the [ellipsis](https://en.wikipedia.org/wiki/Ellipsis) with the names and types of your other two variables.  
+2. Inside the function write an `if`-`else` statement that adds the numbers if `sign` is `true` and subtracts the numbers otherwise. Store the result in a variable named `result`.  
+3. Enter the line `basic.showNumber(result)` to show the result.  
+
+   _Hint: This line only needs to be written once._
+4. Call your function. Be sure to include all three arguments in your function call, and that their order matches the order in your function signature.
+
 #### 3. Present
 
+In the [Lab Notebook](README.md), include:
+1. A short narrative about the experiment.  
+2. Short video of your code from 7.2.4 running on your microbit.
 
+In the repository [programs folder](./programs), include:
+1. File `microbit-program-7-2-4.js` with the code you completed in task 7.2.4.
 
 ### Step 8: Loops
 
