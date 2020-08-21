@@ -311,7 +311,7 @@ basic.forever(function () {
 ```
 
 #### 1. Study
-It is common to repeat code that is already writen. This is done with loops. One of the ways that this is done is with the [forever loops.]{https://makecode.microbit.org/reference/basic/forever}
+It is common to repeat code that is already writen. This is done with loops. One of the ways that this is done is with the [forever loops.](https://makecode.microbit.org/reference/basic/forever)
 The encapsulation of code within the function is repeated unless a button action has taken over the processor.
 basic.forever(function()
 {
@@ -327,11 +327,11 @@ The only differnce is the function is taken in as a variable.
 This makes basic.forever a first class function.
 
 There are three ways to display the 5x5 led matrix expicity. 
- One of which is [Show LEDs]{https://makecode.microbit.org/reference/basic/show-leds}
+ One of which is [Show LEDs](https://makecode.microbit.org/reference/basic/show-leds)
     This one alows one show the LEDs that one wants in a 5X5. 
- Another is [Show icon]{https://makecode.microbit.org/reference/basic/show-icon}
+ Another is [Show icon](https://makecode.microbit.org/reference/basic/show-icon)
      This displays a pre programed image which one could choose to display.
- Last is [clear screen]{https://makecode.microbit.org/reference/basic/clear-screen}
+ Last is [clear screen](https://makecode.microbit.org/reference/basic/clear-screen)
       This clears the 5x5 LED matix.   
 
 #### 2. Apply
