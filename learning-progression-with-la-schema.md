@@ -110,13 +110,25 @@ This single line introduces us to several important computer programming concept
 [[toc](#table-of-contents)]
 
 1. `[<lernact-prac>]` Open a new project in MakeCode, select JavaScript as the language for the editor, write the one-line program from above, verify correct execution in the micro:bit simulator (leftmost column on the screen), and then program the micro:bit. You have to first download the program. This writes a file with the extension .HEX, which contains the compiled program, to the specified directory on your computer. Then, you need to connect the micro:bit to the computer with a USB cable. This will register the micro:bit as a "drive" and show on both your desktop and in the file managager as a drive. You have to find the saved program file and drag-n-drop it onto the micro:bit drive (in either location).  
-2. `[<lernact-prac>]` Change the icon being displayed. The MakeCode editor has a `[<cept>]`_auto-completion_ feature which allows you to see all the possible programmatic names, including packages and functions, that are available to you. You just have to start typing and a drop-down menu appears to the right of your cursor. The menu contains all the available names, which contain the characters you had already typed. You can select any of them to complete your typing. (See the figure below).
-![alt text](images/auto-completion.png "Auto-completion"]
-An especially useful variant of the auto-completion features is when you want to select a function from a package or a name from an `enum` type. Type the name of the package or `enum` and then type a dot `.`. All the available functions of the package or names in the `enum` will appear in a drop-down menu for you to select from. (See figure below.)
+2. `[<lernact-prac>]` Change the icon being displayed and program the micro:bit. The MakeCode editor has a `[<cept>]`_auto-completion_ feature which allows you to see all the possible programmatic names, including packages and functions, that are available to you. You just have to start typing and a drop-down menu appears to the right of your cursor. The menu contains all the available names, which contain the characters you had already typed. You can select any of them to complete your typing. (See the figure below).  
+   <img src="images/auto-completion.png" alt="Auto-completion" width="600"/>
+An especially useful variant of the auto-completion features is when you want to select a function from a package or a name from an `enum` type. Type the name of the package or `enum` and then type a dot `.`. All the available functions of the package or names in the `enum` will appear in a drop-down menu for you to select from. (See figure below.)  
+   <img src="images/auto-completion-with-dot.png" alt="Auto-completion with dot" width="600"/>
+3. Choose a different `show...` function from the `basic` package and program the micro:bit.  
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
+1. Answer question 1.1.1.  
+2. Answer question 1.1.2.  
+3. Answer question 1.1.3.  
+4. Answer question 1.1.4.  
+5. Answer question 1.1.5.  
+6. Answer question 1.1.6.  
+7. Answer question 1.1.7.  
+8. Embed an image of your micro:bit executing the program from 1.2.1.  
+9. Embed an image of your micro:bit executing the program from 1.2.2.  
+10. Embed an image of your micro:bit executing the program from 1.2.3.  
 
 
 ### Step 2: Comments
