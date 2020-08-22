@@ -64,8 +64,10 @@ Table of Contents
 This progression will dive straight into writing a short program for the micro:bit. Along the way, we will introduce and motivate elements of the programming language JavaScript. This progression will also serve as our first follow-through of our standard assignment workflow on Microsoft MakeCode and Github Classroom. Finally, we will introduce how to write [Markdown](https://en.wikipedia.org/wiki/Markdown) files like this [one](README.md) your are reading.
 
 ### Step 1: One-line program
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 `[<lernact-rd>]`Before we jump into `[<cept>]`_computer programming_, we should prepare ourselves with some useful definitions. What is a `[<cept>]`_computer_? A computer is a `[<cept>]`_machine_ which manupulates `[<cept>]`_numbers_. The basic components of a computer are `[<cept>]`_processor_, `[<cept>]`_memory_, `[<cept>]`_input_, and`[<cept>]`_output_. For example, the two buttons of the micro:bit are input devices and the 5x5 matrix of red `[<cep>]`_LEDs_ is an output device. `[<cept>]`_Data_ enter the computer through its input devices and are saved to memory. The processor accesses the data from memory to manipulate them and writes them back to memory. When a result of the manipulation is ready, the data exits the computer through its output devices. 
 
@@ -100,12 +102,16 @@ We will explain everything about this line of `[<cept>]`_code_, but first let's 
 
 
 #### 2. Apply
+[[toc](#table-of-contents)]
+
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 2: Comments
+[[toc](#table-of-contents)]
 
 ```javascript
 basic.showIcon(IconNames.Heart)       // this text ignored
