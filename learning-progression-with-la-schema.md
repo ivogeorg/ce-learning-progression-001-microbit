@@ -1,11 +1,6 @@
-_**TODO:**_
-1. _Incorporate materials from [programming notebooks](https://github.com/CE-Curriculum-Development/mat-cpe-1040)._  
-2. _Rearrange for the _study, apply, present_ structure like [CE Learning Progression 006: Flip-flops](https://github.com/ivogeorg/https://github.com/ivogeorg/ce-learning-progression-006-flip-flops)._  
----
-
 # CPE 1040 - Fall 2020
 
-This is the first learning progression for the Fall 2020 installment of the CPE 1040 - Intro to Computer Engineering course at MSU Denver.
+This is learning progression 001 for the Fall 2020 installment of the course CPE 1040: Introduction to Computer Engineering at MSU Denver.
 
 Table of Contents
 =================
@@ -66,15 +61,41 @@ Table of Contents
 
 ## Learning Progression 001: micro:bit
 
-This progression will dive right into writing a short program for the micro:bit. Along the way, we will introduce and motivate elements of the programming language JavaScript. This progression will also serve as our first follow-through of our standard assignment workflow on Microsoft MakeCode and Github Classroom. Finally, we will introduce how to write [Markdown](https://en.wikipedia.org/wiki/Markdown) files  like this [README](README.md).
+This progression will dive straight into writing a short program for the micro:bit. Along the way, we will introduce and motivate elements of the programming language JavaScript. This progression will also serve as our first follow-through of our standard assignment workflow on Microsoft MakeCode and Github Classroom. Finally, we will introduce how to write [Markdown](https://en.wikipedia.org/wiki/Markdown) files like this [one](README.md) your are reading.
 
 ### Step 1: One-line program
 
+#### 1. Study
+
+`[<lernact-rd>]`Before we jump into `[<cept>]`_computer programming_, we should prepare ourselves with some useful definitions. What is a `[<cept>]`_computer_? A computer is a `[<cept>]`_machine_ which manupulates `[<cept>]`_numbers_. The basic components of a computer are `[<cept>]`_processor_, `[<cept>]`_memory_, `[<cept>]`_input_, and`[<cept>]`_output_. `[<cept>]`_Data_ enter the computer through its input devices and are saved to memory. The processor accesses the data from memory to manipulate them and writes them back to memory. When a result of the manipulation is ready, the data exits the computer through its output devices. 
+
+We use computers in a variety of different ways: to edit text, to watch movies, to design machines, to transfer money, to solve equations, etc., etc.. Despite this enormous variety, computers only work on numbers. Any data that we wish to manipulate with a computer, we first `[<cept>]`_encode_ into numbers and only then we input into the computer. At the output of the computer, we may wish to `[<decode>]` the data to enable humans to interpret the result.
+
+`[<LERNACT-ANS>]`**Question 1.1.1:** How is text encoded in the computer?
+`[<LERNACT-ANS>]`**Question 1.1.2:** How is text intput into the computer?
+`[<LERNACT-ANS>]`**Question 1.1.3:** How is text output by the computer?
+`[<LERNACT-ANS>]`**Question 1.1.4:** What is JPEG and what does it do?
+`[<LERNACT-ANS>]`**Question 1.1.5:** What kind of data is JPEG used for?
+
+The two types of numbers computers work on are `[<cept>]`_integers_ (aka `[<cept>]`_whole numbers_) and `[<cept>]`_real numbers_. Because of the particular format adopted for the representation of real numbers, in computing they are usually called `[<cept>]`_floating-point numbers_. The set of `[<cept>]`_operations_ a computer can perform on numeric data is not large:
+1. Arithmetic: addition, subtraction, multiplication, and division.  
+2. Logical: AND, OR, NOT, etc..  
+3. Comparisons: greater-than, less-than, equal-to, not-equal-to, etc..  
+4. Memory: load/read, store/write, move, etc..  
+5. Bit-level: shift-right, shift-left, rotate-right, rotate-left, etc..
+6. Branch.
+
+Binary...
+
+
+
+`[<LERNACT-RD>]` We start with the simplest of programs, just a single line: 
 ```javascript
 basic.showIcon(IconNames.Heart)
 ```
 
-#### 1. Study
+
+
 
 #### 2. Apply
 
