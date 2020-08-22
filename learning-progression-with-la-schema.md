@@ -137,8 +137,9 @@ In the [Lab Notebook](README.md):
 [[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
-Computer programs can include `[<cept>]`_comments_, sections of text that are ignored. They are usually included for incline documentation, to mark to-do sections in the code, general communication between developers working on the same files, and for `[<cept>]`_code annotation_. There are two different comment syntaxes:
+`[<lernact-rd>]`Computer programs can include `[<cept>]`_comments_, sections of text that are ignored. They are usually included for incline documentation, to mark to-do sections in the code, general communication between developers working on the same files, and for `[<cept>]`_code annotation_. There are two different comment syntaxes:
 ```javascript
 // this is a whole-line comment
 basic.showIcon(IconNames.Heart)       // this is a partial-line comment
@@ -153,11 +154,13 @@ basic.showIcon(IconNames.Heart)       // this is a partial-line comment
 Commenting out your code is a very useful habit. Try to be _succinct_ and _clear_. Your co-workers will be greatful to you.  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
-1. Include a leading block comment in your basic one-line program from the last section, describing the program.  
-2. Include a partial-line comment to the right of the line of code, stating why you chose this icon.   
+1. `[<lernact-prac>]` Include a leading block comment in your basic one-line program from the last section, describing the program.  
+2. `[<lernact-prac>]`Include a partial-line comment to the right of the line of code, stating why you chose this icon.   
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 In the [programs folder](programs):
 
@@ -192,6 +195,10 @@ In the [Lab Notebook](README.md):
 
 
 ### Step 3: Sequential execution
+[[toc](#table-of-contents)]
+
+#### 1. Study
+[[toc](#table-of-contents)]
 
 ```javascript
 basic.showIcon(IconNames.Heart)
@@ -199,15 +206,16 @@ basic.pause(2000)
 basic.showIcon(IconNames.Butterfly)
 ```
 
-#### 1. Study
-
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 4: Encapsulation
+[[toc](#table-of-contents)]
 
 ```javascript
 {
@@ -218,14 +226,18 @@ basic.showIcon(IconNames.Butterfly)
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 5: Conditionals
+[[toc](#table-of-contents)]
 
 ```javascript
 if (true) {
@@ -250,14 +262,18 @@ if (false) {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 6: Data types
+[[toc](#table-of-contents)]
 
 ```javascript
 let isHeart : boolean = true
@@ -274,14 +290,18 @@ if (isHeart) {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 7: Functions
+[[toc](#table-of-contents)]
 
 ```javascript
 function displayIcons(isHeart : boolean) {
@@ -300,14 +320,18 @@ displayIcons()
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 8: Loops
+[[toc](#table-of-contents)]
 
 ```javascript
 
@@ -319,14 +343,18 @@ while (true) {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 9: Loop function
+[[toc](#table-of-contents)]
 
 ```javascript
 
@@ -338,14 +366,18 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 10: Inside and outside of loops
+[[toc](#table-of-contents)]
 
 ```javascript
 let isHeart : boolean = true
@@ -362,14 +394,18 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 11: Events
+[[toc](#table-of-contents)]
 
 ```javascript
 let isHeart : boolean = true
@@ -394,14 +430,18 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 
 
 ### Step 12:  Flipping a boolean
+[[toc](#table-of-contents)]
 
 ```javascript
 let isHeart : boolean = true
@@ -422,7 +462,10 @@ basic.forever(function () {
 ```
 
 #### 1. Study
+[[toc](#table-of-contents)]
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
