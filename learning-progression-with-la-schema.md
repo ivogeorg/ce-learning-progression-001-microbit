@@ -67,33 +67,35 @@ This progression will dive straight into writing a short program for the micro:b
 
 #### 1. Study
 
-`[<lernact-rd>]`Before we jump into `[<cept>]`_computer programming_, we should prepare ourselves with some useful definitions. What is a `[<cept>]`_computer_? A computer is a `[<cept>]`_machine_ which manupulates `[<cept>]`_numbers_. The basic components of a computer are `[<cept>]`_processor_, `[<cept>]`_memory_, `[<cept>]`_input_, and`[<cept>]`_output_. `[<cept>]`_Data_ enter the computer through its input devices and are saved to memory. The processor accesses the data from memory to manipulate them and writes them back to memory. When a result of the manipulation is ready, the data exits the computer through its output devices. 
+`[<lernact-rd>]`Before we jump into `[<cept>]`_computer programming_, we should prepare ourselves with some useful definitions. What is a `[<cept>]`_computer_? A computer is a `[<cept>]`_machine_ which manupulates `[<cept>]`_numbers_. The basic components of a computer are `[<cept>]`_processor_, `[<cept>]`_memory_, `[<cept>]`_input_, and`[<cept>]`_output_. For example, the two buttons of the micro:bit are input devices and the 5x5 matrix of red `[<cep>]`_LEDs_ is an output device. `[<cept>]`_Data_ enter the computer through its input devices and are saved to memory. The processor accesses the data from memory to manipulate them and writes them back to memory. When a result of the manipulation is ready, the data exits the computer through its output devices. 
 
 We use computers in a variety of different ways: to edit text, to watch movies, to design machines, to transfer money, to solve equations, etc., etc.. Despite this enormous variety, computers only work on numbers. Any data that we wish to manipulate with a computer, we first `[<cept>]`_encode_ into numbers and only then we input into the computer. At the output of the computer, we may wish to `[<decode>]` the data to enable humans to interpret the result.
 
-`[<LERNACT-ANS>]`**Question 1.1.1:** How is text encoded in the computer?
-`[<LERNACT-ANS>]`**Question 1.1.2:** How is text intput into the computer?
-`[<LERNACT-ANS>]`**Question 1.1.3:** How is text output by the computer?
-`[<LERNACT-ANS>]`**Question 1.1.4:** What is JPEG and what does it do?
-`[<LERNACT-ANS>]`**Question 1.1.5:** What kind of data is JPEG used for?
+`[<LERNACT-ANS>]`**Question 1.1.1:** How is text encoded in the computer?  
+`[<LERNACT-ANS>]`**Question 1.1.2:** How is text intput into the computer?  
+`[<LERNACT-ANS>]`**Question 1.1.3:** How is text output by the computer?  
+`[<LERNACT-ANS>]`**Question 1.1.4:** What is JPEG and what does it do?  
+`[<LERNACT-ANS>]`**Question 1.1.5:** What kind of data is JPEG used for?  
 
 The two types of numbers computers work on are `[<cept>]`_integers_ (aka `[<cept>]`_whole numbers_) and `[<cept>]`_real numbers_. Because of the particular format adopted for the representation of real numbers, in computing they are usually called `[<cept>]`_floating-point numbers_. The set of `[<cept>]`_operations_ a computer can perform on numeric data is not large:
-1. Arithmetic: addition, subtraction, multiplication, and division.  
-2. Logical: AND, OR, NOT, etc..  
-3. Comparisons: greater-than, less-than, equal-to, not-equal-to, etc..  
-4. Memory: load/read, store/write, move, etc..  
-5. Bit-level: shift-right, shift-left, rotate-right, rotate-left, etc..
-6. Branch.
+1. `[<cept>]`_Arithmetic_: `[<cept>]`_addition_, `[<cept>]`_subtraction_, `[<cept>]`_multiplication_, and `[<cept>]`_division_. These operations create new data from already existing data by applying _arithmetic functions_ to pairs of numbers.    
+2. `[<cept>]`_Logical_: `[<cept>]`_AND_, `[<cept>]`_OR_, `[<cept>]`_NOT_, etc.. These operations create new data from already existing data by applying _logical function_ to single numbers or pairs of numbers.   
+3. `[<cept>]`_Comparisons_: `[<cept>]`_greater-than_, `[<cept>]`_less-than_, `[<cept>]`_equal-to_, `[<cept>]`_not-equal-to_, etc.. These operations compare pairs of numbers.    
+4. Memory: `[<cept>]`_load/read_, `[<cept>]`_store/write_, `[<cept>]`_move_, etc.. These operations move data around.    
+5. `[<cept>]`_Bit-level_: `[<cept>]`_shift-right_, `[<cept>]`_shift-left_, `[<cept>]`_rotate-right_, `[<cept>]`_rotate-left_, etc.. These operations create new data from existing data by manipulating single numbers on the bit level.  
+6. `[<cept>]`_Branch_. These operations cause the processor to jump from one place in a program to another, providing the funcamental mechanism for `[<cept>]`_functions_, `[<cept>]`_conditional execution_, and `[<cept>]`_loops_.  
+For example, this is the [summary](https://developer.arm.com/documentation/ddi0432/c/programmers-model/instruction-set-summary) of the `[<cept>]`_instruction set_ of the processor of the micro:bit (that is, the operations it can perform.  
 
-Binary...
+All data in a computer is represented in the `[<cept>]`_binary number system_, which has only two symbols, 0 and 1. These are called `[<cept>]`_bits_. All numbers are represented as sequences of 0s and 1s (aka bit patterns). The lengths of these sequences are always `[<cept>]`_powers_ of 2: 8, 16, 32, 64, 128.
 
+`[<LERNACT-ANS>]`**Question 1.1.6:** If the 8-bit pattern `00001011` represents 11<sub>10</sub>, what number in `[<cept>]`_decimal_ does the bit pattern represent if it is _shifted one bit to the left_? _Note: Shifting to the left is performed by dropping the leftmost bit and filling on the right with 0s.    
+`[<LERNACT-ANS>]`**Question 1.1.7:** If the 8-bit pattern `00001011` represents 11<sub>10</sub>, what number in `[<cept>]`_decimal_ does the bit pattern represent if it is _shifted one bit to the right_? _Note: Shifting to the right is performed analogously to shifting to the left.    
 
-
-`[<LERNACT-RD>]` We start with the simplest of programs, just a single line: 
+`[<LERNACT-RD>]` Now we are ready to jump into programming. We start with the simplest of programs, just a single line: 
 ```javascript
 basic.showIcon(IconNames.Heart)
 ```
-
+We will explain everything about this line of `[<cept>]`_code_, but first let's say what it does when `[<cept>]`_compiled_ and written to the program memory of the micro:bit: a representation of a heart is lit up on the LEDs and remains lit until the micro:bit is reprogrammed or it's '[<cept>]`_power supply_ is disconnected.
 
 
 
