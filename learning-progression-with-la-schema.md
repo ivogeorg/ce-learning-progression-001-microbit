@@ -119,6 +119,8 @@ An especially useful variant of the auto-completion features is when you want to
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [Lab Notebook](README.md):
+
 1. Answer question 1.1.1.  
 2. Answer question 1.1.2.  
 3. Answer question 1.1.3.  
@@ -134,16 +136,59 @@ An especially useful variant of the auto-completion features is when you want to
 ### Step 2: Comments
 [[toc](#table-of-contents)]
 
-```javascript
-basic.showIcon(IconNames.Heart)       // this text ignored
-```
-
 #### 1. Study
+
+Computer programs can include `[<cept>]`_comments_, sections of text that are ignored. They are usually included for incline documentation, to mark to-do sections in the code, general communication between developers working on the same files, and for `[<cept>]`_code annotation_. There are two different comment syntaxes:
+```javascript
+// this is a whole-line comment
+basic.showIcon(IconNames.Heart)       // this is a partial-line comment
+```
+and  
+```javascript
+/* 
+   This is a block comment, which I can use to describe a file, a function, or anything else.
+*/
+basic.showIcon(IconNames.Heart)       // this is a partial-line comment
+```
+Commenting out your code is a very useful habit. Try to be _succinct_ and _clear_. Your co-workers will be greatful to you.  
 
 #### 2. Apply
 
+1. Include a leading block comment in your basic one-line program from the last section, describing the program.  
+2. Include a partial-line comment to the right of the line of code, stating why you chose this icon.   
+
 #### 3. Present
 
+In the [programs folder](programs):
+
+1. Include your program from 2.2.2 with filename `microbit-program-2-2-2.js`.  
+
+> Instructions
+> 1. Copy your code from MakeCode.  
+> 2. Click on the [programs](programs) folder to open it.  
+> 3. Click **Add file** and select **Create new file**.
+>    <img src="images/create-new-file.png" alt="Create new file" width="800" />  
+> 4. Write the required filename in the filename box at the top.  
+> 5. Paste your program into the open file editor region.  
+>    <img src="images/filename-and-paste.png" alt="Filename and paste" width="800" />  
+> 6. Go to the bottom of the page and click **Commit new file**.  
+>    <img src="images/commit-new-file.png" alt="Commit new file" width="800" />  
+> 7. You have a new file in [programs](programs).  
+>    <img src="images/new-file-in-programs.png" alt="New file in programs" width="800" />  
+
+In the [Lab Notebook](README.md):
+
+1. Reference your program from 2.2.2.
+
+> Instructions
+> 1. Open the [Lab Notebook](README.md) for editing.  
+> 2. Write the Title with heading 1 (that is, one #), the step with heading 2 (##) and the presentation item with heading 3 (###).  
+> 3. The reference syntax is shown in the image below.  
+>    <img src="images/open-lab-notebook-to-edit.png" alt="Open Lab Notebook for editing" width="800" />  
+> 4. Click on "Preview changes" to see how it all looks.  
+> 5. Commit the file updates.
+>    <img src="images/commit-changes-to-lab-notebook.png" alt="Commit the changes" width="800" />  
+> 6. Test the link from the [Lab Notebook](README.md). If all went well, the program file will be displayed.  
 
 
 ### Step 3: Sequential execution
