@@ -81,7 +81,7 @@ The two types of numbers computers work on are `[<cept>]`_integers_ (aka `[<cept
 1. `[<cept>]`_Arithmetic_: `[<cept>]`_addition_, `[<cept>]`_subtraction_, `[<cept>]`_multiplication_, and `[<cept>]`_division_. These operations create new data from already existing data by applying _arithmetic functions_ to pairs of numbers.    
 2. `[<cept>]`_Logical_: `[<cept>]`_AND_, `[<cept>]`_OR_, `[<cept>]`_NOT_, etc.. These operations create new data from already existing data by applying _logical function_ to single numbers or pairs of numbers.   
 3. `[<cept>]`_Comparisons_: `[<cept>]`_greater-than_, `[<cept>]`_less-than_, `[<cept>]`_equal-to_, `[<cept>]`_not-equal-to_, etc.. These operations compare pairs of numbers.    
-4. Memory: `[<cept>]`_load/read_, `[<cept>]`_store/write_, `[<cept>]`_move_, etc.. These operations move data around.    
+4. Memory: `[<cept>]`_load/read_, `[<cept>]`_store/write_, `[<cept>]`_move_, etc.. These operations move data around between different `[<cept>]`_locations in memory_.    
 5. `[<cept>]`_Bit-level_: `[<cept>]`_shift-right_, `[<cept>]`_shift-left_, `[<cept>]`_rotate-right_, `[<cept>]`_rotate-left_, etc.. These operations create new data from existing data by manipulating single numbers on the bit level.  
 6. `[<cept>]`_Branch_. These operations cause the processor to jump from one place in a program to another, providing the funcamental mechanism for `[<cept>]`_functions_, `[<cept>]`_conditional execution_, and `[<cept>]`_loops_.  
 For example, this is the [summary](https://developer.arm.com/documentation/ddi0432/c/programmers-model/instruction-set-summary) of the `[<cept>]`_instruction set_ of the processor of the micro:bit (that is, the operations it can perform.  
