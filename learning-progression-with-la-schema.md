@@ -91,7 +91,7 @@ For example, this is the [summary](https://developer.arm.com/documentation/ddi04
 All data in a computer is represented in the `[<cept>]`_binary number system_, which has only two symbols, 0 and 1. These are called `[<cept>]`_bits_. All numbers are represented as sequences of 0s and 1s (aka bit patterns). The lengths of these sequences are always `[<cept>]`_powers_ of 2: 8, 16, 32, 64, 128.
 
 `[<lernact-ans>]`**Question 1.1.6:** If the 8-bit pattern `00001011` represents 11<sub>10</sub>, what number in `[<cept>]`_decimal_ does the bit pattern represent if it is _shifted one bit to the left_? _Note: Shifting to the left is performed by dropping the leftmost bit and filling on the right with 0s._    
-`[<lernact-ans>]`**Question 1.1.7:** If the 8-bit pattern `00001011` represents 11<sub>10</sub>, what number in `[<cept>]`_decimal_ does the bit pattern represent if it is _shifted one bit to the right_? _Note: Shifting to the right is performed analogously to shifting to the left._    
+`[<lernact-ans>]`**Question 1.1.7:** If the 8-bit pattern `00001011` represents 11<sub>10</sub>, what number in decimal does the bit pattern represent if it is _shifted one bit to the right_? _Note: Shifting to the right is performed analogously to shifting to the left._    
 
 `[<lernact-rd>]` Now we are ready to jump into programming. We start with the simplest of programs, just a single line: 
 ```javascript
@@ -109,6 +109,10 @@ This single line introduces us to several important computer programming concept
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+1. `[<lernact-prac>]` Open a new project in MakeCode, select JavaScript as the language for the editor, write the one-line program from above, verify correct execution in the micro:bit simulator (leftmost column on the screen), and then program the micro:bit. You have to first download the program. This writes a file with the extension .HEX, which contains the compiled program, to the specified directory on your computer. Then, you need to connect the micro:bit to the computer with a USB cable. This will register the micro:bit as a "drive" and show on both your desktop and in the file managager as a drive. You have to find the saved program file and drag-n-drop it onto the micro:bit drive (in either location).  
+2. `[<lernact-prac>]` Change the icon being displayed. The MakeCode editor has a `[<cept>]`_auto-completion_ feature which allows you to see all the possible programmatic names, including packages and functions, that are available to you. You just have to start typing and a drop-down menu appears to the right of your cursor. The menu contains all the available names, which contain the characters you had already typed. You can select any of them to complete your typing. (See the figure below).
+![alt text](images/auto-completion.png "Auto-completion"]
+An especially useful variant of the auto-completion features is when you want to select a function from a package or a name from an `enum` type. Type the name of the package or `enum` and then type a dot `.`. All the available functions of the package or names in the `enum` will appear in a drop-down menu for you to select from. (See figure below.)
 
 #### 3. Present
 [[toc](#table-of-contents)]
