@@ -427,24 +427,60 @@ In the [Lab Notebook](README.md):
 ### Step 7: Loops
 [[toc](#table-of-contents)]
 
-```javascript
-
-while (true) {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(2000)
-    basic.clearScreen()
-})
-```
 
 #### 1. Study
 [[toc](#table-of-contents)]
 
+`[<lernact-rd>]` As we saw in the previous step, it is tedious to copy and paste the same code just to see how it works under different circumstances. In general, in programming, any code that will be executed more than once is encapsulated and one a mechanism for repeated execution is applied to it. `[<cept>]`_Code duplication_ is avoided almost entirely, as it is extremely error prone, especially in larger programs. If the code has to be changed, it is very difficult if copies of the same code are strewn throughout the program. It is much easer - in fact, it is the only way - to encapsulate the code and have it in a single place. Then any modifications are done in only this single place.
+
+There are two major methods for encapsulation of code for repeated execution, both of which use blocks (code between curly braces `{ ... }`): `[<cept>]`_loops_ and [functions](#step-8-functions). Loops are somewhat easier so we'll start with them. In fact, we'll jump right in with an example. If we wanted to have the heart icon constantly show and disappear, until we pull the plug on the micro:bit, we would do it as follows:
+```javascript
+while (true) {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(200)
+    basic.clearScreen()
+}
+```
+This is the `while` loop. It takes a block of code and executes it _while_ the condition in the parentheses is true. `while` and `true` here are _keywords_. In our example, the condition is the Boolean `[<cept>]`_literal_ `true`, so it is always true. Literal means what you think it does:
+- a literal number is `10`, or `2.35`;   
+- a literal string is `encapsulate`, or `termination`;  
+- a literal Boolean is `true` or `false`.  _Note: These particular literals are also keywords._    
+A literal is the symbolic representation of an actual value itself, as opposed to some variable name. So, a `while (true) { ... }` loop will execute forever. _Note: There is a way to exit out of a forever loop, which requires use of the keyword `break`, but we will cover that at a later time._  
+
+When the program execution reaches a `while` loop, it first evaluates the conditional experession in parentheses, and, if evaluates to true, it proceeds to execute the loop block once. Then, it checks the condition again, and so on. Note that the value of the condition might change as a result of what happens in the loop block. Take a look at this example:
+```javascript
+let counter : number = 100
+
+while (counter > 0) {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(200)
+    basic.clearScreen()
+    counter = counter - 1
+}
+```
+The last line in the loop block is an assignment, in which a variable appears to be assigned to itself. Actually, the value of the variable is read to evaluate the `[<cept>]`_expression_ on the right side of the assignment (aka the `[<cept>]`_rvalue_) and only then is the value of that expression assigned to the variable on the left side of the assignment (aka the `[<cept>]`_lvalue_). The `=` is called the `[<cept>]`_assignment operator_.  
+
+`[<lernact-ans>]`**Question 7.1.1:** Is the program going to exit from the while loop or will it execute forever?  
+
 #### 2. Apply
 [[toc](#table-of-contents)]
+
+1. `[<lernact-prac>]` Modify your program from 6.2.2 to use a while loop.  
+2. `[<lernact-prac>]` Modify your program from 6.2.4 to use a while loop.  
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
+
+1. Include your program from 7.2.1 with filename `microbit-program-7-2-1.js`.  
+2. Include your program from 7.2.1 with filename `microbit-program-7-2-2.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Answer question 7.1.1.  
+2. Link to the program file of the program from 7.2.1.  
+3. Link to the program file of the program from 7.2.2.  
 
 
 ### Step 8: Functions
@@ -480,6 +516,12 @@ displayIcons()
 ### Step 9: Loop function
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
+[First-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)  
+
+
 ```javascript
 
 basic.forever(function () {
@@ -489,8 +531,6 @@ basic.forever(function () {
 })
 ```
 
-#### 1. Study
-[[toc](#table-of-contents)]
 
 #### 2. Apply
 [[toc](#table-of-contents)]
