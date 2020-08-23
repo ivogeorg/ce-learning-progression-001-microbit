@@ -699,6 +699,14 @@ In the [Lab Notebook](README.md):
 ### Step 11: Events
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
+`[<lernact-rd>]` Up to now, we have written programs which do only _output_. We still haven't seen how the micro:bit receives _input_, yet there are buttons and sensors we might want to utilize in our code. The micro:bit has so far been unresponsive. So, how does the processor know that a button has been pressed or the motion sensor has detected a gesture, or an IO pin has received a signal of interest? As can be seen in the [hardware overview](https://tech.microbit.org/hardware/) of the micro:bit, the processor (the Nordic nRF51822) is a small chip and all these input devices are not part of it. But they are [connected to it through wires](https://github.com/bbcmicrobit/hardware/blob/master/V1.5/SCH_BBC-Microbit_V1.5.PDF), over which they can send signals.
+
+There are two general ways a processor can find out about `[<cept>]`_external events_ like these signals: `[<cept>]`_polling_ and `[<cept>]`_interrupts_. Polling is equivalent to a roll call: the processor checks each external device for changes. Polling, just like roll calls, is very wasteful of the processors time. Interrupts are equivalent to raising hands: the processor detects a signal from an external device and pauses its current work briefly to respond to the signal appropriately. Interrupts, in contrast to polling, are minimally invasive, and have thus been adopted as the exclusive way to inform processors of external events.
+
+You may have noticed that you can press the buttons or shake the micro:bit and nothing special happens. This is because the processor has not received instructions on what to do when it detects external events. We, the programmers, supply that through the functions in the `input` package. Let's see an example:
 ```javascript
 let isHeart : boolean = true
 
@@ -716,16 +724,24 @@ basic.forever(function () {
     } else {
        basic.showIcon(IconNames.Butterfly)
     }
-    basic.pause(2000)
+    basic.pause(200)
     basic.clearScreen()
 })
 ```
+The key difference from our previous example is the existence of the call to `input.onButtonPressed()`. It takes two arguments: 
+1. A button, in the form of a name from a named collection (that is, `enum`) `Button` (it only has 3 names: `A`, `B`, and `AB`, which stands for the two buttons being pressed together), and  
+2. An _anonymous function without arguments or return value_, which contains the code we want to be executed upon detection of a button press of Button A. Such functions are called `[<cept>]`_event handlers_, because the processor executes them each upon detection of the external event it has been assigned to.     
+That's all to it. In our case, we toggle the value of our Boolean variable `isHeart` and cause a heart or a butterfly to be displayed accordingly. Either the heart beats or the butterly flutters, and we can change this at the press of a button.
 
-#### 1. Study
-[[toc](#table-of-contents)]
+Note that the "botton press" is a composite event, which consists of a strict sequence of two primitive events, a "button down" and a "button up". The button-press event handler is not triggered until you release the button.
+
+The `input` package contains all the functions like `onButtonPressed()` which assign event handlers for the events the micro:bit has been designed to detect.  
+
 
 #### 2. Apply
 [[toc](#table-of-contents)]
+
+
 
 #### 3. Present
 [[toc](#table-of-contents)]
