@@ -491,7 +491,7 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
-Loops are very useful to execute the same code repeatedly and spare us code duplication. However, the code block in a loop _does not_:
+`[<lernact-rd>]` Loops are very useful to execute the same code repeatedly and spare us code duplication. However, the code block in a loop _does not_:
 1. Have a name, which we can use to execute it similarly to how we use variables; and   
 2. Cannot accept data input or perform data output. It is just static and unchangeable.   
 
@@ -562,6 +562,7 @@ To recapitulate, functions can be called by name from anywhere in the program. O
    3. If greater than 5, it calls `flashFive` with the giraffe icon.  
    4. If not, it calls 'flashFive` with the duck icon.  
 
+
 #### 3. Present
 [[toc](#table-of-contents)]
 
@@ -584,25 +585,52 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
-[First-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)  
-
-
+The function `basic.forever()` is curious. Here it is in action:
 ```javascript
 
 basic.forever(function () {
     basic.showIcon(IconNames.Heart)
-    basic.pause(2000)
-    basic.clearScreen()
+    basic.pause(200)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(200)
 })
 ```
 
+`[<lernact-ans>]` **Question 9.1.1:** What does `basic.forever()` do?  
+`[<lernact-ans>]` **Question 9.1.2:** What are the arguments of `basic.forever()`? Be specific!  
+`[<lernact-ans>]` **Question 9.1.3:** What does the call `basic.forever(() => {})` do?     
+
+`basic.forever()` takes as an argument an `[<cept>]`_anonymous function_ without arguments or return value. An anonymous function doesn't have a name:
+```javascript
+function () {}
+```
+or, as a shorthand, even
+```javascript
+() => {}
+```
+
+JavaScript has [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), and passing functions as arguments to other functions and even returning functions from functions is very common. We'll be seeing this throughout the MakeCode function packages for the micro:bit.
+
+`[<lernact-ans>]` **Question 9.1.4:** Why can the argument function be anonymous? _Hint: Without a name, can you call it?_       
+`[<lernact-ans>]` **Question 9.1.5:** Why should the argument function have no arguments?  
+`[<lernact-ans>]` **Question 9.1.6:** Why should the argument function have no return value?  
 
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+1. `[<lernact-prac>]` Rewrite the program from 8.2.2 using `basic.forever()`.  
+
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
+
+1. Include your program from 9.2.1 with filename `microbit-program-9-2-1.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Link to the program file of the program from 9.2.1.  
+2. Shoot a short video of the micro:bit executing the program from 9.2.1 and link to it.  
 
 
 ### Step 10: Writing minimal code
@@ -716,4 +744,5 @@ basic.forever(function () {
 #### 3. Present
 [[toc](#table-of-contents)]
 
+challenge: events
 
