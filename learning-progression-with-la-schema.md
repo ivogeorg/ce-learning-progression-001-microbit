@@ -32,11 +32,11 @@ Table of Contents
       * [1\. Study](#1-study-5)
       * [2\. Apply](#2-apply-5)
       * [3\. Present](#3-present-5)
-    * [Step 7: Functions](#step-7-functions)
+    * [Step 7: Loops](#step-7-loops)
       * [1\. Study](#1-study-6)
       * [2\. Apply](#2-apply-6)
       * [3\. Present](#3-present-6)
-    * [Step 8: Loops](#step-8-loops)
+    * [Step 8: Functions](#step-8-functions)
       * [1\. Study](#1-study-7)
       * [2\. Apply](#2-apply-7)
       * [3\. Present](#3-present-7)
@@ -394,14 +394,60 @@ Now, depending on how the value of our boolean variable `isPositive` is changed 
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-1. `[<lernact-prac>]` 
+1. `[<lernact-prac>]` Write a program, which:
+   1. Declares a Boolean variable and two string variables.  
+   2. Uses the Boolean variable to decide which of the strings to scroll on the micro:bit LED matrix. _Note: Use the string variable names as arguments, not the strings themselves._    
+   3. Changes the value of the Boolean variable in the middle of the program. _Hint: For example, you can have the same `if-else` statement written twice, with the variables declared at the top of the program and the Boolean variable changing in between the two statements._
+   4. Scrolls the other string.  
+2. `[<lernact-prac>]` Write a program which uses `Math.randomBoolean()` to pick one of two strings to scroll each time it is executed.    
+3. `[<lernact-prac>]` Write a program like the one in 6.2.1, but:
+   1. Instead of a Boolean variable declare a numerical variable a numerical constant. _Hint: The statement for the declaration of a constant is similar to the one for declaration of a variable, but instead of `let`, it starts with `const`._  
+   2. Instead of using the Boolean varible in the condition, use a comparison, specifically, whether the numeric variable is larger than the constant, like `a > c`, where `a` and `c` are the names of the variable and constant, respectively.    
+4. `[<lernact-prac>]` Write a program which uses `randint()`, compared to the constant, to pick one of the two strings. _Note: The range you sepecify with the `min` and `max` arguments of `randint()` should contain the constant!_   
+
+
+#### 3. Present
+[[toc](#table-of-contents)]
+
+In the [programs](programs) directory:
+
+1. Include your program from 6.2.1 with filename `microbit-program-6-2-1.js`.  
+2. Include your program from 6.2.1 with filename `microbit-program-6-2-2.js`.  
+3. Include your program from 6.2.1 with filename `microbit-program-6-2-3.js`.  
+4. Include your program from 6.2.1 with filename `microbit-program-6-2-4.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Link the program file from 6.2.1.  
+2. Link the program file from 6.2.2.  
+3. Link the program file from 6.2.3.  
+4. Link the program file from 6.2.4.  
+
+
+### Step 7: Loops
+[[toc](#table-of-contents)]
+
+```javascript
+
+while (true) {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(2000)
+    basic.clearScreen()
+})
+```
+
+#### 1. Study
+[[toc](#table-of-contents)]
+
+#### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
 
 
-### Step 7: Functions
+### Step 8: Functions
 [[toc](#table-of-contents)]
 
 ```javascript
@@ -418,29 +464,6 @@ function displayIcons(isHeart : boolean) {
 }
    
 displayIcons()
-```
-
-#### 1. Study
-[[toc](#table-of-contents)]
-
-#### 2. Apply
-[[toc](#table-of-contents)]
-
-#### 3. Present
-[[toc](#table-of-contents)]
-
-
-
-### Step 8: Loops
-[[toc](#table-of-contents)]
-
-```javascript
-
-while (true) {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(2000)
-    basic.clearScreen()
-})
 ```
 
 #### 1. Study
