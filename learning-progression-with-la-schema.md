@@ -486,30 +486,74 @@ In the [Lab Notebook](README.md):
 ### Step 8: Functions
 [[toc](#table-of-contents)]
 
-```javascript
-function displayIcons(isHeart : boolean) {
-    if (isHeart) {
-        basic.showIcon(IconNames.Heart)
-        basic.pause(2000)
-        basic.showIcon(IconNames.Butterfly)
-    } else {
-        basic.showIcon(IconNames.Angry)
-        basic.pause(2000)
-        basic.showIcon(IconNames.Snake)
-    }
-}
-   
-displayIcons()
-```
-
 #### 1. Study
 [[toc](#table-of-contents)]
+
+Loops are very useful to execute the same code repeatedly and spare us code duplication. However, the code block in a loop _does not_:
+1. Have a name, which we can use to execute it similarly to how we use variables; and   
+2. Cannot accept data input or perform data output. It is just static and unchangeable.   
+
+This is where [functions](https://makecode.microbit.org/javascript/functions) come in: named blocks of code which can accept data in the form of arguments and return data. Let's look at an example:
+```javascript
+function flashIcon(icon : IconNames) : number {
+    const times : number = randint(0, 15)
+    let counter : number = 0
+
+    while (counter < times) {
+        basic.showIcon(icon)
+        basic.pause(200)
+        basic.clearScreen()
+        basic.pause(200)
+    }
+    
+    return times
+}
+   
+let timesFlashed : number = flashIcon(IconNames.SmallHeart)
+```
+Let's tease this apart:
+1. The function block is:
+   ```javascript
+   {
+        const times : number = randint(0, 15)
+        let counter : number = 0
+
+        while (counter < times) {
+            basic.showIcon(icon)
+            basic.pause(200)
+            basic.clearScreen()
+            basic.pause(200)
+        }
+    
+        return times
+   }
+   ```  
+   Every thing in the block except the `return` statement, which can only exist in a function block, can be executed in a loop.  
+   1. `times` and `counter` are a `[<cept>]`_local_ constant and a local variable, for the use of the block code.  
+   2. `return` is a keyword which starts the `[<cept>]`_function return statement_. The value of the constant or variable `times` will be returned out of the function upon its termination. That is, if we want this value, we can put the function call on the right side of an assignment (as an rvalue) and assign the value to a variable.  
+2. The `[<cept>]`_function signature_ is the first line (without the opening left curly brace `{`, which can be put on the next line by itself):
+   ```javascript
+   function flashIcon(icon : IconNames) : number
+   ```
+   1. `function` is a keyword, used to start function declarations and nothing else.  
+   2. `flasIcon` is the function name, which the programmer decides. It is best to give functions descriptive names. The first "word" of the name starts with a small letter, and all others start with a capital letter. This is a convention called _camel type_.   
+   3. The items in the parentheses are zero, one, or multiple _function parameters_. They look like variable declarations except that they don't use the leading keyword `let`. In fact, that's all they are. They are variables, which hold the _function arguments_, passed to the function when it is called. They can be used just like local variables.  
+3. The last line is a function [call](https://makecode.microbit.org/javascript/call), in which we:
+   1. Call the function `flashIcon()` with the argument `IconNames.SmallHeart`. This will cause it to flash a small heart (if `times` is not zero!).  
+   2. Assign the return value of the `flashIcon()` function to a new numerical variable called `timesFlashed`.  
+   
+To recapitulate, functions can be called by name from anywhere in the program. Optionally, they can be passed data to work with. Again optionally, they can return a result.
+
 
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+
+
 #### 3. Present
 [[toc](#table-of-contents)]
+
+
 
 
 
