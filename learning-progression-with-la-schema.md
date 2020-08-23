@@ -741,11 +741,24 @@ The `input` package contains all the functions like `onButtonPressed()` which as
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+1. `[<lernact-prac>]` Write a program like the one in the example, which switches the icons upon pressing the two buttons simultaneously.  
+2. `[<lernact-prac>]` Write a program like the one in the example, which switches the icons upon the micro:bit being shaken.  
 
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
+
+1. Include your program from 11.2.1 with filename `microbit-program-11-2-1.js`.  
+2. Include your program from 11.2.2 with filename `microbit-program-11-2-2.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Link to the program file of the program from 11.2.1.  
+2. Link to the program file of the program from 11.2.2.  
+3. Shoot a short video of the micro:bit executing the program from 11.2.1 and link to it.  
+4. Shoot a short video of the micro:bit executing the program from 11.2.2 and link to it.  
 
 
 ### Step 12: Flipping a boolean
