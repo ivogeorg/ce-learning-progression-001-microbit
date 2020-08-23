@@ -44,7 +44,7 @@ Table of Contents
       * [1\. Study](#1-study-8)
       * [2\. Apply](#2-apply-8)
       * [3\. Present](#3-present-8)
-    * [Step 10: Inside and outside of loops](#step-10-inside-and-outside-of-loops)
+    * [Step 10: Writing minimal code](#step-10-writing-minimal-code)
       * [1\. Study](#1-study-9)
       * [2\. Apply](#2-apply-9)
       * [3\. Present](#3-present-9)
@@ -500,7 +500,7 @@ basic.forever(function () {
 
 
 
-### Step 10: Inside and outside of loops
+### Step 10: Writing minimal code
 [[toc](#table-of-contents)]
 
 ```javascript
