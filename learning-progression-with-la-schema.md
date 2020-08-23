@@ -474,13 +474,15 @@ The last line in the loop block is an assignment, in which a variable appears to
 In the [programs](programs) directory:
 
 1. Include your program from 7.2.1 with filename `microbit-program-7-2-1.js`.  
-2. Include your program from 7.2.1 with filename `microbit-program-7-2-2.js`.  
+2. Include your program from 7.2.2 with filename `microbit-program-7-2-2.js`.  
 
 In the [Lab Notebook](README.md):
 
 1. Answer question 7.1.1.  
 2. Link to the program file of the program from 7.2.1.  
 3. Link to the program file of the program from 7.2.2.  
+4. Shoot a short video of the micro:bit executing the program from 7.2.1 and link to it.  
+5. Shoot a short video of the micro:bit executing the program from 7.2.2 and link to it.  
 
 
 ### Step 8: Functions
@@ -548,13 +550,32 @@ To recapitulate, functions can be called by name from anywhere in the program. O
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-
+1. `[<lernact-prac>]` Write a program that:
+   1. Declares a function:
+      1. Is like `flashIcon`.   
+      2. Flashes the icon only _5 times_. Call it `flashFive`.     
+      3. Does not return `times`.  
+   2. Calls the function with the giraffe icon.  
+2. `[<lernact-prac>]` Write a program that:
+   1. Executes a `while (true) {}` loop.  
+   2. Inside the loop, it checks if a call to `randint()` (with appropriate arguments) is greater than 5.  
+   3. If greater than 5, it calls `flashFive` with the giraffe icon.  
+   4. If not, it calls 'flashFive` with the duck icon.  
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
 
+1. Include your program from 8.2.1 with filename `microbit-program-8-2-1.js`.  
+2. Include your program from 8.2.1 with filename `microbit-program-8-2-2.js`.  
 
+In the [Lab Notebook](README.md):
+
+1. Link to the program file of the program from 8.2.1.  
+2. Link to the program file of the program from 8.2.2.  
+3. Shoot a short video of the micro:bit executing the program from 8.2.1 and link to it.  
+4. Shoot a short video of the micro:bit executing the program from 8.2.2 and link to it.  
 
 
 ### Step 9: Loop function
