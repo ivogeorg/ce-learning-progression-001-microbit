@@ -636,11 +636,36 @@ In the [Lab Notebook](README.md):
 ### Step 10: Writing minimal code
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
+`[<lernact-rd>]` Look at the following snippet of code:
 ```javascript
 let isHeart : boolean = true
 
 basic.forever(function () {
     if (isHeart) {
+        basic.showIcon(IconNames.Heart)
+        basic.pause(200)
+        basic.clearScreen()
+    } else {
+        basic.showIcon(IconNames.Butterfly)
+        basic.pause(200)
+        basic.clearScreen()
+    }
+})
+```
+The paradigm of non-redundant code does not only apply to cases which can be solved with encapsulation, say, with loops and functions. Sometimes, you need to take code _out of encapsulation_ to make it non-redundant and less error-prone. In our example above the lines
+```javascript
+basic.pause(200)
+basic.clearScreen()
+```
+are executed in both branches. The best thing to do in such situations is to take them out of the blocks into the outer block following the branch:
+```javascript
+let isHeart : boolean = true
+
+basic.forever(function () {
+    if (isHe
         basic.showIcon(IconNames.Heart)
     } else {
         basic.showIcon(IconNames.Butterfly)
@@ -650,15 +675,25 @@ basic.forever(function () {
 })
 ```
 
-#### 1. Study
-[[toc](#table-of-contents)]
-
 #### 2. Apply
 [[toc](#table-of-contents)]
+
+1. `[<lernact-prac>]` Write a program which:
+   1. Repeatedly:
+      1. Randomly shows either a heart for 200 ms or a butterfly for 400 ms.  
+      2. Then flashes 5 times either a skill or a ghost for 600 ms.   
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
+
+1. Include your program from 10.2.1 with filename `microbit-program-10-2-1.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Link to the program file of the program from 10.2.1.  
+2. Shoot a short video of the micro:bit executing the program from 10.2.1 and link to it.  
 
 
 ### Step 11: Events
