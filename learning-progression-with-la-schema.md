@@ -259,12 +259,20 @@ This will not change the execution of the program, but notice the _4-space inden
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-_Nothing to do here._
+1. `[<lernact-prac>]` In the MakeCode editor, write the three statements in the block from above. Hover over the `pause` function name. A documentation blurb pops up explaining the `[<cept>]`_syntax_ and usage of the function, including the number and types of its arguments. What is the argument of `pause()`? What are its units?  
+2. `[<lernact-prac>]` Hover your mouse over the `showIcon` function name. What are its arguments? What does the second argument do? _Hint: Consult the [reference](https://makecode.microbit.org/reference/basic/show-icon) for an example._  
+3. `[<lernact-prac>]` Rewrite the program from the example above to do the same thing _without_ calling the `basic.pause()` function.  
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
-_Nothing to do here._
+In the [programs](programs) directory:
+
+1. Add your program from 4.2.3 with filename `microbit-program-4-2-3.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Screen-capture the documentation pop-up for the `showIcon()` function. Embed it in part 4.3.1 of your submission.  
 
 
 ### Step 5: Conditionals
@@ -273,6 +281,15 @@ _Nothing to do here._
 #### 1. Study
 [[toc](#table-of-contents)]
 
+One of the most important uses of blocks (a number of code lines enclosed in curly braces `{}`) to express `[<cept>]`_conditional execution_, which in plain words is an _either-or_ situation, in which we want to execute one of two blocks of code depending on whether a condition is true or not. The condition can be any comparison. If it is true, we execute one block, if it is false, we execute another. In most programming languages, this looks like:
+```javascript
+if (16 > 5) {          // the condition is in the parentheses
+                       // block 1 to execute if condition is TRUE
+} else {
+                       // block 2 to execute if condition is FALSE
+}
+```
+This is called the `if` `[<cept>]`_statement_, or the `if-else` statement. In programming, we use `if` and `else` to express _either_ and _or_. The `if` is always followed by a conditional `[<cept>]`_expression_. In the example above, the condition is `16 > 5`, which is trivially true (that is, the computer just compares the two numbers in a single operation) and so the first block (block 1) is executed and the second is ignored (the program "jumps over" it). Here is the example with some code that is already familiar:
 ```javascript
 if (16 > 5) {
     basic.showIcon(IconNames.Heart)
@@ -283,7 +300,9 @@ if (16 > 5) {
     basic.pause(2000)
     basic.showIcon(IconNames.Snake)
 }
-   
+```
+In this case, the micro:bit will display a Heart for 2 seconds (2000 ms) and then will switch to a butterfly. If we change the expression in the condition so that it turns up false, the micro:bit will instead show an angry face for 2 seconds and then switch to a snake:    
+```javascript
 if (3 > 40) {
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
@@ -298,14 +317,28 @@ if (3 > 40) {
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+1. Write a short program consisting of an `if-else` statement. In the block to be executed if the condition is true, show 3 positive icons for 500 ms each. In the block to be executed if the condition is false, show 3 negative icons for 50 ms each.  
+2. Write an expression that comes up true between the condition parentheses, and program the micro:bit.  
+3. Write an expression that comes up false between the condition parentheses, and program the micro:bit.  
+
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs](programs) directory:
+
+1. Include your program from 5.2.2 with filename `microbit-program-5-2-2.js`.  
+2. Include your program from 5.2.3 with filename `microbit-program-5-2-3.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Include a short YuJa video of your program from 5.2.2.  
+2. Include a short YuJa video of your program from 5.2.3.  
 
 
 ### Step 6: Variables and data types
 [[toc](#table-of-contents)]
 
+Conditional statements with constants (like `16 > 5`) are not so useful since the condition will never change and we might as well not have a conditional statement but just execute the corresponding block all the time. Conditionals are most useful when they contain expressions involving `[<cept>]`_variables_. ...
 ```javascript
 let isHeart : boolean = true
 
