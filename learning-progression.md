@@ -255,9 +255,9 @@ function displayIcons(isHeart : boolean) { //This curly bracket is the opening d
 displayIcons(true) //Calls our function.
 ```
 
-The first line is called a signature. It contains the keyword `function` followed by the name of our function, in this case `displayIcons`. Inside the parentheses we place arguments. Arguments are local variables, meaning that the function is going to use them in its block of code. Like any other variable, arguments have types. Note that functions can also be declared with no arguments or many arguments.  
+The first line is called a signature. It contains the keyword `function` followed by the name of our function, in this case `displayIcons`. Inside the parentheses we place arguments. Arguments are local variables, meaning that the function is going to use them in its block of code. Like any other variable, arguments have types. Note that functions can be declared with no arguments, one argument, or many arguments.  
 
- Under the signature is the function's code block. Like all code blocks, it is composed of a series of statements.
+Under the signature is the function's code block. Like all code blocks, it is composed of a series of statements that will be executed in sequence.
  
 The function's code block defines what we want our function to do. However, it does not actually execute the code in the function. For this we need to [call the function](https://makecode.microbit.org/javascript/call), or to tell javascript that we want to execute this function. The function call must include any arguments defined by the function's signature with the appropriate types. In our case, we can use boolean literals (`true` and `false`) or a boolean variable that has been assigned a value. 
 
@@ -279,7 +279,11 @@ In the [Lab Notebook](README.md), include:
 In the repository [programs folder](./programs), include:
 1. File `microbit-program-7-2-4.js` with the code you completed in task 7.2.4.
 
-### Step 8: Loops
+### Step 8: Loops 1. Create a new project in [makecode](https://makecode.microbit.org/).  
+
+#### 1. Study
+
+Much of the work done by a computer involves repetition. For example, to find the product of two numbers, a computer would simply add the first number to itself repeatedly until the correct result is achieved. So, javascript includes constructs called loops, which repeatedly execute code (usually) until a condition is met.
 
 ```javascript
 
@@ -290,12 +294,34 @@ while (true) {
 })
 ```
 
-#### 1. Study
+A common and straightforward type of loop is the [while loop](https://makecode.microbit.org/blocks/loops/while). As in the example above, they begin with the keyword `while` followed by a conditional statement in parentheses. After the conditional is a block containing the code that will be executed in a loop.
+
+The conditional statement in a `while` loop works in the same way as it does with `if` statements. The primary difference is that the code in an `if` statement's block will only be executed once, the code in a `while` loop will be executed until the condition in the parentheses is `false`.
+
+The condition in the `while` loop above is `true`. Since `true` is always `true`, the code in this `while` loop will run repeatedly until you turn off your microbit. This kind of while loop is known as an [infinite loop](https://en.wikipedia.org/wiki/Infinite_loop).
 
 #### 2. Apply
 
+The program that you write in this step will define a function that finds the [power](https://www.mathsisfun.com/exponent.html) of two numbers and shows the result.
+
+ 1. Create a new project in [makecode](https://makecode.microbit.org/) and delete the starter code.  
+ 2. Start by declaring one variable of the type `number` named `result`. Give `result` an initial value of `1`.  
+ 3. Write a function signature. Name your function `pow`, and give it two arguments: a number named `base` and a number named `exponent` or `exp` for short.  
+ 4. Inside the `function` block, write a `while` loop. Leave the parentheses empty for now.  
+ 5. Write the code inside the `while` block. Think about how exponents work in terms of multiplying a number repeatedly until arriving at the correct result. Use the `*` symbol to multiply two variables.  
+ 
+   _Hint: You can use  the `exp` variable to count the number of times the `while` loop has run. This is how you give your loop a condition that causes it to terminate._  
+ 6. Use the line `basic.showNumber(result)` to display the result on the LEDs.
+ 7. Call the function using two numbers as arguments. Verify that the result is correct.
+ 
 #### 3. Present
 
+In the [Lab Notebook](README.md), include:
+1. A short narrative about the experiment.  
+2. Short video of your code from 8.2.7 running on your microbit.
+
+In the repository [programs folder](./programs), include:
+1. File `microbit-program-8-2-7.js` with the code you completed in task 8.2.7.
 
 
 ### Step 9: Loop function
