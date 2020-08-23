@@ -281,7 +281,7 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
-One of the most important uses of blocks (a number of code lines enclosed in curly braces `{}`) to express `[<cept>]`_conditional execution_, which in plain words is an _either-or_ situation, in which we want to execute one of two blocks of code depending on whether a condition is true or not. The condition can be any comparison. If it is true, we execute one block, if it is false, we execute another. In most programming languages, this looks like:
+`[<lernact-rd>]` One of the most important uses of blocks (a number of code lines enclosed in curly braces `{}`) to express `[<cept>]`_conditional execution_, which in plain words is an _either-or_ situation, in which we want to execute one of two blocks of code depending on whether a condition is true or not. The condition can be any comparison. If it is true, we execute one block, if it is false, we execute another. In most programming languages, this looks like:
 ```javascript
 if (16 > 5) {          // the condition is in the parentheses
                        // block 1 to execute if condition is TRUE
@@ -317,9 +317,9 @@ if (3 > 40) {
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-1. Write a short program consisting of an `if-else` statement. In the block to be executed if the condition is true, show 3 positive icons for 500 ms each. In the block to be executed if the condition is false, show 3 negative icons for 50 ms each.  
-2. Write an expression that comes up true between the condition parentheses, and program the micro:bit.  
-3. Write an expression that comes up false between the condition parentheses, and program the micro:bit.  
+1. `[<lernact-prac>]` Write a short program consisting of an `if-else` statement. In the block to be executed if the condition is true, show 3 positive icons for 500 ms each. In the block to be executed if the condition is false, show 3 negative icons for 50 ms each.  
+2. `[<lernact-prac>]` Write an expression that comes up true between the condition parentheses, and program the micro:bit.  
+3. `[<lernact-prac>]` Write an expression that comes up false between the condition parentheses, and program the micro:bit.  
 
 #### 3. Present
 [[toc](#table-of-contents)]
@@ -338,11 +338,48 @@ In the [Lab Notebook](README.md):
 ### Step 6: Variables and data types
 [[toc](#table-of-contents)]
 
-Conditional statements with constants (like `16 > 5`) are not so useful since the condition will never change and we might as well not have a conditional statement but just execute the corresponding block all the time. Conditionals are most useful when they contain expressions involving `[<cept>]`_variables_. ...
-```javascript
-let isHeart : boolean = true
+#### 1. Study
+[[toc](#table-of-contents)]
 
-if (isHeart) {
+`[<lernact-rd>]` Conditional statements with constants (like `16 > 5`) are not so useful since the condition will never change and we might as well not have a conditional statement but just execute the corresponding block all the time. Conditionals are most useful when they contain expressions involving `[<cept>]`_variables_. Variables are named `[<cept>]`_values_, and also memory locations the computer associates with the names. The values of variables can vary over the course of the program. Without variables, most of the programs we could write would be as useless as a conditional statement with a constant conditional expression. To write programs with _dynamic behavior_, that is, which vary what they do, depending on features of the data they have to operate on, we use variables.
+
+Variables are `[<cept>]`_declared_ (meaning given a name), `[<cept>]`_assigned_ (meaning given a value), copied, and read. Let's look at some examples:
+```javascript
+let start
+```
+This line contains a `let` `[<cept>]`_statement_, used to declare a variable. It reads "let _start_ be a variable". `let` is a `[<cept>]`_keyword_ in the JavaScript language, that is, a word that:
+- has a special meaning, and  
+- is a `[<cept>]`_reserved word_, that is, it cannot be used for anything else but for its strict purpose. 
+Each language has keywords. JavaScript has about 40 [keywords](https://mathiasbynens.be/notes/javascript-identifiers), among them `let`, `if`, and `else`.  
+
+```javascript
+start = 0
+```
+This line is an assignment, that is, it assigns a value (the number 0) to the variable. The zero is written to the memory location the computer associates with this variable. We can combine a declaration and an assignment in a composite statement on one line to show how a variable is read:
+```javascript
+let counter = start
+```
+This shows us the power of [variables](https://makecode.microbit.org/javascript/variables): they carry changing values we can refer to with human-readable names and can use in all kinds of clever ways to program complex behavior.
+
+Some programming languages require that each declared variable belongs to a set of `[<cept>]`_data types_. Two groups of data types we can already guess: integers of different sizes and floating-point numbers of different sizes. While the canonical [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) language does not require typed variables, the JavaScript variant used in MakeCode, called [TypeScript](https://www.typescriptlang.org/), has the ability to declare typed variables. To the beginning programmer, at the expense of a small increase in complexity, using typed variables: 
+- teaches them to understand that different variables are saved and treated differently in memory, and   
+- prevents multiple `[<cept>]`_bugs_ (errors in the program code) where an attempted operation on a given variable cannot be performed on this type of variable, and the program starts behaving in unexpected ways.
+
+Let's revisit our `counter` variable to show how we can declare a type:
+```javascript
+let counter : number = start
+```
+From now on, `counter` will be treated as a number. `number` in the above declaration is a TypeSciprt keyword but **not** a JavaScript keyword.
+
+For us at the present moment, the most important and useful [data types](https://makecode.microbit.org/javascript/types) TypeScript distinguishes are `number` (lumping both integers and floating-point numbers together), `string` (sequences of characters, that is, text), and `boolean`. Before we talk about `[<cept>]`_booleans_, let's recall that we also saw another type earlier, the name collection type `enum`.
+
+`[<lernact-rd>]` Boolean variables are extremely important in computing. The name hails from the inventor of [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), an [algebra](https://en.wikipedia.org/wiki/Algebra) where variables can only take _2 different values_, symbolically represented as `0` and `1`, or, in more readable form, `false` and `true`. Thus, it is deeply related to the _binary number system_, which used `0`-s and `1`-s to represent all numbers, and thus, all data computers work with. 
+
+A variable declared `boolean` can only have two values, `true` and `false`. `true` and `false` are keywords in JavaScript. Boolean varables can be used directly in the condition for an `if` statement, as follows:
+```javascript
+let isPositive : boolean = true
+
+if (isPositive) {
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
@@ -352,12 +389,12 @@ if (isHeart) {
     basic.showIcon(IconNames.Snake)
 }
 ```
-
-#### 1. Study
-[[toc](#table-of-contents)]
+Now, depending on how the value of our boolean variable `isPositive` is changed by the rest of our program, the micro:bit will display either "positive" or "negative" icons.
 
 #### 2. Apply
 [[toc](#table-of-contents)]
+
+1. `[<lernact-prac>]` 
 
 #### 3. Present
 [[toc](#table-of-contents)]
