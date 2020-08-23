@@ -246,7 +246,7 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
-`[<lernact-rd>]` The curly braces `{}` are used for `[<cept>]`_encapsulation_ of code that has to run together sequentially. They are used in [conditionals](step-5-conditionals), [functions](step-7-functions), [loops](step-8-loops), and other programming language constructs. They are also used to define `[<cept>]`_scope_ for `[<cept>]`_variables_. More on variables [below](step-6-variables-and-data-types). Code enclosed in curly braces is called a `[<cept>]`_block_. For example, our three lines of code can safely be enclosed in a block as follows:
+`[<lernact-rd>]` The curly braces `{}` are used for `[<cept>]`_encapsulation_ of code that has to run together sequentially. They are used in [conditionals](step-5-conditionals), [functions](step-7-functions), [loops](step-8-loops), and other programming language constructs. They are also used to define `[<cept>]`_scope_ for `[<cept>]`_variables_. More on variables [below](#step-6-variables-and-data-types). Code enclosed in curly braces is called a `[<cept>]`_block_. For example, our three lines of code can safely be enclosed in a block as follows:
 ```javascript
 {
     basic.showIcon(IconNames.Heart)
