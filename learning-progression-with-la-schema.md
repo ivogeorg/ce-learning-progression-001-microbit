@@ -28,7 +28,7 @@ Table of Contents
       * [1\. Study](#1-study-4)
       * [2\. Apply](#2-apply-4)
       * [3\. Present](#3-present-4)
-    * [Step 6: Data types](#step-6-data-types)
+    * [Step 6: Variables and data types](#step-6-variables-and-data-types)
       * [1\. Study](#1-study-5)
       * [2\. Apply](#2-apply-5)
       * [3\. Present](#3-present-5)
@@ -107,7 +107,7 @@ This single line introduces us to several important computer programming concept
 1. A line of code is compiled (meaning: translated) into a sequence of processor instructions (aka machine instructions) which the processor `[<cept>]`_executes_ (meaning: performs).  
 2. `showIcon` is the name of a function, which is an `[<cept>]`_encapsulation_ of several lines of code. The lines can made to be executed by only specifying the function name. The function is said to be `[<cept>]`_called_. More on functions [below](#step-7-functions).  
 3. A function may or may not have `[<cept>]`_arguments_, which are data that are `[<cept>]`_passed_ (meaning: given) to the function, which needs them to execute its code. The arguments, if any, are specified between the _parentheses_ after the function name. Every function call, wether it has arguments or not, **requires** the two parentheses `()`. Otherwise, this line of code will not be interpreted as a function call.  
-4. The argument of the function `showIcon` is `IconNames.Heart`. This is a name of an icon, which is a pattern of lit and dark LEDs for the 5x5 LED matrix of the mcirobit. The named icons are already defined and stored in the memory of the microbit when used. The collection of predefined icons is represented by an [`enum`](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum) data type, called `IconNames`. More on data types [below](#step-6-data-types).   
+4. The argument of the function `showIcon` is `IconNames.Heart`. This is a name of an icon, which is a pattern of lit and dark LEDs for the 5x5 LED matrix of the mcirobit. The named icons are already defined and stored in the memory of the microbit when used. The collection of predefined icons is represented by an [`enum`](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum) data type, called `IconNames`. More on data types [below](#step-6-variables-and-data-types).   
 5. Finally, `basic` is the name of a `[<cept>]`_package_ of functions (aka `[<cept>]`_library_). Functions are always packaged together according to their purpose. For example, in the [MakeCode editor](https://makecode.microbit.org/#editor) the packages are listed in a column bar on the left of the code area (`basic`, `input`, `radio`, `led`, etc.) and clicking on any of the package names opens the list of available package functions with documentation.  
 
 #### 2. Apply
@@ -243,6 +243,10 @@ In the [Lab Notebook](README.md):
 ### Step 4: Encapsulation
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
+`[<lernact-rd>]` The curly braces `{}` are used for `[<cept>]`_encapsulation_ of code that has to run together sequentially. They are used in [conditionals](step-5-conditionals), [functions](step-7-functions), [loops](step-8-loops), and other programming language constructs. They are also used to define `[<cept>]`_scope_ for `[<cept>]`_variables_. More on variables [below](step-6-variables-and-data-types). Code enclosed in curly braces is called a `[<cept>]`_block_. For example, our three lines of code can safely be enclosed in a block as follows:
 ```javascript
 {
     basic.showIcon(IconNames.Heart)
@@ -250,23 +254,27 @@ In the [Lab Notebook](README.md):
     basic.showIcon(IconNames.Butterfly
 }
 ```
-
-#### 1. Study
-[[toc](#table-of-contents)]
+This will not change the execution of the program, but notice the _4-space indentation_ of the enclosed code lines relative to the line on which the opening brace `{` is situated.
 
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+_Nothing to do here._
+
 #### 3. Present
 [[toc](#table-of-contents)]
 
+_Nothing to do here._
 
 
 ### Step 5: Conditionals
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
 ```javascript
-if (true) {
+if (16 > 5) {
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
@@ -276,7 +284,7 @@ if (true) {
     basic.showIcon(IconNames.Snake)
 }
    
-if (false) {
+if (3 > 40) {
     basic.showIcon(IconNames.Heart)
     basic.pause(2000)
     basic.showIcon(IconNames.Butterfly)
@@ -287,9 +295,6 @@ if (false) {
 }
 ```
 
-#### 1. Study
-[[toc](#table-of-contents)]
-
 #### 2. Apply
 [[toc](#table-of-contents)]
 
@@ -298,7 +303,7 @@ if (false) {
 
 
 
-### Step 6: Data types
+### Step 6: Variables and data types
 [[toc](#table-of-contents)]
 
 ```javascript
