@@ -52,10 +52,14 @@ Table of Contents
       * [1\. Study](#1-study-10)
       * [2\. Apply](#2-apply-10)
       * [3\. Present](#3-present-10)
-    * [Step 12:  Flipping a boolean](#step-12--flipping-a-boolean)
+    * [Step 12: Flipping a boolean](#step-12-flipping-a-boolean)
       * [1\. Study](#1-study-11)
       * [2\. Apply](#2-apply-11)
       * [3\. Present](#3-present-11)
+    * [Step 13: Execution with branches](#step-13-execution-with-branches)
+      * [1\. Study](#1-study-12)
+      * [2\. Apply](#2-apply-12)
+      * [3\. Present](#3-present-12)
 
 
 
@@ -162,7 +166,7 @@ Commenting out your code is a very useful habit. Try to be _succinct_ and _clear
 #### 3. Present
 [[toc](#table-of-contents)]
 
-In the [programs folder](programs):
+In the [programs directory](programs):
 
 1. Include your program from 2.2.2 with filename `microbit-program-2-2-2.js`.  
 
@@ -200,6 +204,7 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
+`[<lernact-rd>]` Multiple lines of code are executed `[<cept>]`_sequentially_, _from top to bottom_ as written in your program. For example, the following code snippet first displays a heart icon, keeps it shown for 2 seconds (`pause(2000)`) and then changes to displaying a butterfly icon:
 ```javascript
 basic.showIcon(IconNames.Heart)
 basic.pause(2000)
@@ -209,9 +214,30 @@ basic.showIcon(IconNames.Butterfly)
 #### 2. Apply
 [[toc](#table-of-contents)]
 
+1. `[<lernact-prac>]` Write a program showing 10 different icons one after the other, with decreasing pause times in between, starting from 500 and dropping by 50 each time.
+
 #### 3. Present
 [[toc](#table-of-contents)]
 
+In the [programs directory](programs):
+
+1. Include your program from 3.2.1 with filename `microbit-program-3-2-1.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Reference your video showing the execution of your program from 3.2.1.
+
+> Instructions
+> 1. Program your micro:bit.  
+> 2. Download the YuJa mobile app for your phone and login into MSU Denver (enter domain `msudenver.edu` when prompted). 
+> 3. Record a short video of your micro:bit executing your program.  
+> 4. Open YuJa in the browser: [https://msudenver.yuja.com](https://msudenver.yuja.com).  
+> 5. Find your video, hover over the thumbnail and select **More...**.  
+> 6. When the window with all the options opens, select **Links** on the left.  
+> 7. Find and click the button **Permalink**. Copy this link.  
+> 8. Use it to link to the video in the [Lab Notebook](README.md) as shown below.
+>    <img src="images/yuja-video.png" alt="Referencing a YuJa video" width="800" />  
+> 9. Commit the changes to the [Lab Notebook](README.md).  
 
 
 ### Step 4: Encapsulation
@@ -440,7 +466,7 @@ basic.forever(function () {
 
 
 
-### Step 12:  Flipping a boolean
+### Step 12: Flipping a boolean
 [[toc](#table-of-contents)]
 
 ```javascript
@@ -469,3 +495,22 @@ basic.forever(function () {
 
 #### 3. Present
 [[toc](#table-of-contents)]
+
+
+### Step 13: Execution with branches
+
+- sequential  
+- conditional  
+- loop  
+- function  
+
+#### 1. Study
+[[toc](#table-of-contents)]
+
+#### 2. Apply
+[[toc](#table-of-contents)]
+
+#### 3. Present
+[[toc](#table-of-contents)]
+
+
