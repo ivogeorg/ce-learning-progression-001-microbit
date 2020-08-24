@@ -56,10 +56,6 @@ Table of Contents
       * [1\. Study](#1-study-11)
       * [2\. Apply](#2-apply-11)
       * [3\. Present](#3-present-11)
-    * [Step 13: Execution with branches](#step-13-execution-with-branches)
-      * [1\. Study](#1-study-12)
-      * [2\. Apply](#2-apply-12)
-      * [3\. Present](#3-present-12)
 
 
 
