@@ -661,7 +661,7 @@ are executed in both branches. The best thing to do in such situations is to tak
 let isHeart : boolean = true
 
 basic.forever(function () {
-    if (isHe
+    if (isHeart) {
         basic.showIcon(IconNames.Heart)
     } else {
         basic.showIcon(IconNames.Butterfly)
