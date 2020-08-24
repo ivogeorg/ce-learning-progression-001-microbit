@@ -764,6 +764,10 @@ In the [Lab Notebook](README.md):
 ### Step 12: Flipping a boolean
 [[toc](#table-of-contents)]
 
+#### 1. Study
+[[toc](#table-of-contents)]
+
+The symbols `+`, `=`, `>`, etc. are called operators. There is a special operator which can be applied to Boolean variables, Boolean literals, and conditional expressions, to flip their value, from 'true' to 'false', and vice versa: this is he NOT operator, with the symbol `!` (the exclamation mark). Look at the example below:
 ```javascript
 let isHeart : boolean = true
 
@@ -781,32 +785,26 @@ basic.forever(function () {
     basic.clearScreen()
 })
 ```
+There is a single line in the handler for the button press of button A. We are certainly writing minimal code! :)
 
-#### 1. Study
-[[toc](#table-of-contents)]
+`[<lernact-ans>]` **Question 12.1.1:** Is the handler equivalent to the one in the previous step?   
+
 
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-#### 3. Present
-[[toc](#table-of-contents)]
+1. `[<lernact-prac>]` Modify your program from 11.2.2 to use the NOT operator in the event handler for the button press.  
 
-
-### Step 13: Execution with branches
-
-- sequential  
-- conditional  
-- loop  
-- function  
-
-#### 1. Study
-[[toc](#table-of-contents)]
-
-#### 2. Apply
-[[toc](#table-of-contents)]
 
 #### 3. Present
 [[toc](#table-of-contents)]
 
-challenge: events
+In the [programs](programs) directory:
 
+1. Include your program from 12.2.1 with filename `microbit-program-12-2-1.js`.  
+
+In the [Lab Notebook](README.md):
+
+1. Answer question 12.1.1.  
+2. Link to the program file of the program from 12.2.1.  
+3. Shoot a short video of the micro:bit executing the program from 12.2.1 and link to it.  
