@@ -221,7 +221,8 @@ In the [programs directory](programs):
 
 In the [Lab Notebook](README.md):
 
-1. Reference your video showing the execution of your program from 3.2.1.
+1. Reference your program from 3.2.1.
+2. Reference your video showing the execution of your program from 3.2.1.
 
 > Instructions
 > 1. Program your micro:bit.  
@@ -268,7 +269,8 @@ In the [programs](programs) directory:
 
 In the [Lab Notebook](README.md):
 
-1. Screen-capture the documentation pop-up for the `showIcon()` function. Embed it in part 4.3.1 of your submission.  
+1. Reference your program from 4.2.3.
+2. Screen-capture the documentation pop-up for the `showIcon()` function. Embed the image.  
 
 
 ### Step 5: Conditionals
@@ -327,8 +329,10 @@ In the [programs](programs) directory:
 
 In the [Lab Notebook](README.md):
 
-1. Include a short YuJa video of your program from 5.2.2.  
-2. Include a short YuJa video of your program from 5.2.3.  
+1. Reference your program from 5.2.2.  
+2. Reference your program from 5.2.3.  
+3. Include a short YuJa video of your program from 5.2.2.  
+4. Include a short YuJa video of your program from 5.2.3.  
 
 
 ### Step 6: Variables and data types
