@@ -43,6 +43,6 @@ _What is [lorem ipsum](https://www.lipsum.com/)?_
 
 ### 3.3.1
 
-[Program 2.2.200](programs/microbit-program-2-2-200.js)
+[Program 3.2.100](programs/microbit-program-3-2-100.js)
 
-[Demo of program 2.2.200](https://msudenver.yuja.com/V/Video?v=1672915&node=5901978&a=760153473&autoplay=1)
+[Demo of program 3.2.100](https://msudenver.yuja.com/V/Video?v=1672915&node=5901978&a=760153473&autoplay=1)
