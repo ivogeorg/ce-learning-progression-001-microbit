@@ -172,6 +172,7 @@ Code written as "`if`-`else`" statements is always executed in an either-or fash
 
 #### 2. Apply
 
+1. Create a new project in [makecode](https://makecode.microbit.org/) and delete the starter code.
 1. Write a program that shows a heart icon if the condition is `true` and a butterfly if the condition is `false`.  
 2. See what happens when you replace `true` or `false` with a mathematical relationship that will be evaluated as either true or false.
 For example, a relationship in which one number is greater than (`>`) or less than (`<`) another.  
@@ -187,7 +188,7 @@ In the [Lab Notebook](README.md), include:
 2. Short video of your code from 5.2.2 running on your microbit.
 
 In the repository [programs folder](./programs), include:
-1. File `microbit-program-5-2-2.js` with the code you used in task 2.2.2.
+1. File `microbit-program-5-2-2.js` with the code you completed in task 5.2.2.
 
 ### Step 6: Data types
 
@@ -226,9 +227,21 @@ if (isHeart) { //Since `isHeart` is true, the code in the first block will run.
 
 #### 2. Apply
 
+1. Create a new project in [makecode](https://makecode.microbit.org/) and delete the starter code.
+2. Start by declaring three variables: a `boolean`, a `number`, and a `string`. Ideally, variables should be given a descriptive name, however for this exercise names such as `bool1`, `num1`, and `string1` will suffice.  
+   Assign each of the three variables a value. As in the example above, the variable declaration and assignment of an initial value can be done on the same line for each of these types.
+   When declaring a number, simply change the type specification in the `boolean` example to `number`. After the equals sign, instead of `true` or `false`, enter a number of your choosing. For the [string](https://makecode.microbit.org/types/string) do the same, but remember to place your string inside of double quotation marks, e.g. `"Hello, World!"`.
+3. Create an `if`-`else` statement with your `boolean`'s name as the conditonal. In the first block, make the microbit show your number with the line `basic.showNumber( num1 )`. In the second block, make the microbit show your string with the line `basic.showString( string1 )`. Be sure to change `num1` and `string1` if you created your variables with different names.
+4. Run your code in the simulator, with the `boolean` set as `true`, then again with the `boolean` set to `false`.
+
 #### 3. Present
 
+In the [Lab Notebook](README.md), include:
+1. A short narrative about the experiment.  
+2. Short video of your code from 6.2.4 running on your microbit.
 
+In the repository [programs folder](./programs), include:
+1. File `microbit-program-6-2-4.js` with the code you completed in task 6.2.4.
 
 ### Step 7: Functions
 
@@ -263,6 +276,7 @@ The function's code block defines what we want our function to do. However, it d
 
 #### 2. Apply
 
+1. Create a new project in [makecode](https://makecode.microbit.org/) and delete the starter code.
 1. Write a function called `addSubtract` that accepts three arguments: one boolean and two numbers. Each argument in your function signature will need to be separated by commas. You can use this code get you started: `function addSubtract (sign : boolean, ... ) {`. Replace the [ellipsis](https://en.wikipedia.org/wiki/Ellipsis) with the names and types of your other two variables.  
 2. Inside the function write an `if`-`else` statement that adds the numbers if `sign` is `true` and subtracts the numbers otherwise. Store the result in a variable named `result`.  
 3. Enter the line `basic.showNumber(result)` to show the result.  
