@@ -97,7 +97,7 @@ All data in a computer is represented in the `[<cept>]`_binary number system_, w
 ```javascript
 basic.showIcon(IconNames.Heart)
 ```
-We will explain everything about this line of `[<cept>]`_code_ (meaning: line(s) of a programming language), but first let's say what it does when `[<cept>]`_compiled_ and written to the program memory of the micro:bit: a representation of a heart is lit up on the LEDs and remains lit until the micro:bit is reprogrammed or it's '[<cept>]`_power supply_ is disconnected.
+We will explain everything about this line of `[<cept>]`_code_ (meaning: line(s) of a programming language), but first let's say what it does when `[<cept>]`_compiled_ and written to the program memory of the micro:bit: a representation of a heart is lit up on the LEDs and remains lit until the micro:bit is reprogrammed or it's `[<cept>]`_power supply_ is disconnected.
 
 This single line introduces us to several important computer programming concepts:
 1. A line of code is compiled (meaning: translated) into a sequence of processor instructions (aka machine instructions) which the processor `[<cept>]`_executes_ (meaning: performs).  
