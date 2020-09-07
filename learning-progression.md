@@ -681,7 +681,7 @@ basic.forever(function () {
 1. Write a program which:
    1. Repeatedly:
       1. Randomly shows either a heart for 200 ms or a butterfly for 400 ms.  
-      2. Then flashes 5 times either a skill or a ghost for 600 ms.   
+      2. Then flashes 5 times either a skull or a ghost for 600 ms.   
 
 #### 3. Present
 [[toc](#table-of-contents)]
