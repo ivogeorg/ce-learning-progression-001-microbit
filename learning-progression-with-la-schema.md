@@ -97,7 +97,7 @@ All data in a computer is represented in the `[<cept>]`_binary number system_, w
 ```javascript
 basic.showIcon(IconNames.Heart)
 ```
-We will explain everything about this line of `[<cept>]`_code_ (meaning: line(s) of a programming language), but first let's say what it does when `[<cept>]`_compiled_ and written to the program memory of the micro:bit: a representation of a heart is lit up on the LEDs and remains lit until the micro:bit is reprogrammed or it's '[<cept>]`_power supply_ is disconnected.
+We will explain everything about this line of `[<cept>]`_code_ (meaning: line(s) of a programming language), but first let's say what it does when `[<cept>]`_compiled_ and written to the program memory of the micro:bit: a representation of a heart is lit up on the LEDs and remains lit until the micro:bit is reprogrammed or it's `[<cept>]`_power supply_ is disconnected.
 
 This single line introduces us to several important computer programming concepts:
 1. A line of code is compiled (meaning: translated) into a sequence of processor instructions (aka machine instructions) which the processor `[<cept>]`_executes_ (meaning: performs).  
@@ -111,8 +111,8 @@ This single line introduces us to several important computer programming concept
 
 1. `[<lernact-prac>]` Open a new project in MakeCode, select JavaScript as the language for the editor, write the one-line program from above, verify correct execution in the micro:bit simulator (leftmost column on the screen), and then program the micro:bit. You have to first download the program. This writes a file with the extension .HEX, which contains the compiled program, to the specified directory on your computer. Then, you need to connect the micro:bit to the computer with a USB cable. This will register the micro:bit as a "drive" and show on both your desktop and in the file managager as a drive. You have to find the saved program file and drag-n-drop it onto the micro:bit drive (in either location).  
 2. `[<lernact-prac>]` Change the icon being displayed and program the micro:bit. The MakeCode editor has a `[<cept>]`_auto-completion_ feature which allows you to see all the possible programmatic names, including packages and functions, that are available to you. You just have to start typing and a drop-down menu appears to the right of your cursor. The menu contains all the available names, which contain the characters you had already typed. You can select any of them to complete your typing. (See the figure below).  
-   <img src="images/auto-completion.png" alt="Auto-completion" width="600"/>
-An especially useful variant of the auto-completion features is when you want to select a function from a package or a name from an `enum` type. Type the name of the package or `enum` and then type a dot `.`. All the available functions of the package or names in the `enum` will appear in a drop-down menu for you to select from. (See figure below.)  
+   <img src="images/auto-completion.png" alt="Auto-completion" width="600"/>  
+   An especially useful variant of the auto-completion features is when you want to select a function from a package or a name from an `enum` type. Type the name of the package or `enum` and then type a dot `.`. All the available functions of the package or names in the `enum` will appear in a drop-down menu for you to select from. (See figure below.)  
    <img src="images/auto-completion-with-dot.png" alt="Auto-completion with dot" width="600"/>
 3. Choose a different `show...` function from the `basic` package and program the micro:bit.  
 
@@ -677,7 +677,7 @@ basic.forever(function () {
 1. `[<lernact-prac>]` Write a program which:
    1. Repeatedly:
       1. Randomly shows either a heart for 200 ms or a butterfly for 400 ms.  
-      2. Then flashes 5 times either a skill or a ghost for 600 ms.   
+      2. Then flashes 5 times either a skull or a ghost for 600 ms.   
 
 #### 3. Present
 [[toc](#table-of-contents)]
