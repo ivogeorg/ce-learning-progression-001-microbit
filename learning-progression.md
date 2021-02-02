@@ -506,6 +506,8 @@ function flashIcon(icon : IconNames) : number {
         basic.pause(200)
         basic.clearScreen()
         basic.pause(200)
+        
+        counter = counter + 1  // increment variable counter
     }
     
     return times
@@ -525,6 +527,8 @@ Let's tease this apart:
             basic.pause(200)
             basic.clearScreen()
             basic.pause(200)
+        
+            counter = counter + 1  // increment variable counter
         }
     
         return times
