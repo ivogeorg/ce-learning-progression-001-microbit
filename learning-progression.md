@@ -776,7 +776,7 @@ The symbols `+`, `=`, `>`, etc. are called operators. There is a special operato
 let isHeart : boolean = true
 
 input.onButtonPressed(Button.A, function () {
-    uprightHeart = !uprightHeart
+    isHeart = ! isHeart
 })
 
 basic.forever(function () {
