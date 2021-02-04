@@ -35,7 +35,7 @@ Table of Contents
     * [Step 7: Loops](#step-7-loops)
       * [1\. Study](#1-study-6)
       * [2\. Apply](#2-apply-6)
-      * [3\. Present](#3-present-6)
+      * [3\. Present](#3-present-6)  **TODO: Rewrite!**  
     * [Step 8: Functions](#step-8-functions)
       * [1\. Study](#1-study-7)
       * [2\. Apply](#2-apply-7)
