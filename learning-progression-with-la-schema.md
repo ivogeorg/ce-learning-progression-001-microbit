@@ -560,7 +560,7 @@ To recapitulate, functions can be called by name from anywhere in the program. O
    1. Executes a `while (true) {}` loop.  
    2. Inside the loop, it checks if a call to `randint()` (with appropriate arguments) is greater than 5.  
    3. If greater than 5, it calls `flashFive` with the giraffe icon.  
-   4. If not, it calls 'flashFive` with the duck icon.  
+   4. If not, it calls `flashFive` with the duck icon.  
 
 
 #### 3. Present
