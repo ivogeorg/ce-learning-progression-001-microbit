@@ -629,8 +629,14 @@ In the [programs](programs) directory:
 
 In the [Lab Notebook](README.md):
 
-1. Link to the program file of the program from 9.2.1.  
-2. Shoot a short video of the micro:bit executing the program from 9.2.1 and link to it.  
+1. Answer question 9.1.1.  
+2. Answer question 9.1.2.  
+3. Answer question 9.1.3.  
+4. Answer question 9.1.4.  
+5. Answer question 9.1.5.  
+6. Answer question 9.1.6.  
+7. Link to the program file of the program from 9.2.1.  
+8. Shoot a short video of the micro:bit executing the program from 9.2.1 and link to it.  
 
 
 ### Step 10: Writing minimal code
